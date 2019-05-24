@@ -146,6 +146,14 @@ button {
     padding: 0.4em 1.2em;
 }
 
+.table-stripped tbody tr:nth-child(even) {
+    background: #ECEFF1;
+}
+
+.table-stripped tbody tr:nth-child(even):hover {
+    background: #CFD8DC;
+}
+
 /* LIST */
 
 .list {
