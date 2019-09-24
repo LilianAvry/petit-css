@@ -89,7 +89,7 @@ button {
 
 .button-secondary {
     color: var(--black);
-    background-color: transparent;
+    background-color: var(--light-grey);
 }
 
 .button-primary:hover {
@@ -97,7 +97,7 @@ button {
 }
 
 .button-secondary:hover {
-    background-color: var(--light-grey);
+    background-color: var(--grey);
 }
 
 .button:focus {
