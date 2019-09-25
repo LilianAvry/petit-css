@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lil UI</title>
+  <link rel="stylesheet" href="lil.css">
+</head>
+<body>
+
+<nav class="navigation navigation-fixed">
+  <h1>Title</h1>
+  <ul>
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#button">Button</a></li>
+    <li><a href="#button-group">Button group</a></li>
+    <li><a href="#form">Form</a></li>
+    <li><a href="#table">Table</a></li>
+    <li><a href="#list-menu">List</a></li>
+    <li><a href="#card">Card</a></li>
+    <li><a href="#grid">Grid</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- TYPOGRAPHY -->
+  <div class="layout">
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="typography">Typography</h1>
+    </div>
+    <div class="column flex-4">
+      <article class="padding">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h6>Heading 5</h6>
+        <h5>Heading 6</h5>
+        <p>Lorem Ipsum</p>
+        <p>Lorem <strong>Ipsum</strong></p>
+        <a href="#" class="link">Lorem Ipsum</a>
+      </article>
+    </div>
+    <div class="column flex-8">
+      <article>
+        <pre>
+          <code>
+  &lt;h1&gt;Heading&lt;/h1&gt;
+  &lt;h2&gt;Heading&lt;/h2&gt;
+  &lt;h3&gt;Heading&lt;/h3&gt;
+  &lt;h4&gt;Heading&lt;/h4&gt;
+  &lt;h5&gt;Heading&lt;/h5&gt;d
+  &lt;h6&gt;Heading&lt;/h6&gt;d
+  &lt;p&gt;Lorem Ipsum&lt;/p&gt;dd
+  &lt;a href="#" class="link"&gt;Lorem Ipsum&lt;/a&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="layout">
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="button">Button</h1>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <div class="margin">
+          <a href="#" class="button button-primary">primary link</a>
+        </div>
+        <div class="margin">
+          <a href="#" class="button button-secondary">secondary link</a>
+        </div>
+        <div class="margin">
+          <button class="button button-primary">primary button</button>
+        </div>
+        <div class="margin">
+          <button class="button button-secondary">secondary button</button>
+        </div>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article>
+        <pre>
+          <code>
+  &lt;a href="#" class="button button-primary"&gt;primary link&lt;/a&gt;
+  &lt;a href="#" class="button button-secondary"&secondary link&lt;/a&gt;
+  &lt;button href="#" class="button button-primary"&gt;primary link&lt;/button&gt;
+  &lt;button href="#" class="button button-secondary"&gt;secondary link&lt;/button&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+
+    <!-- BUTTON GROUPS -->
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="button-group">Button group</h1>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <div class="button-group margin">
+          <a href="#">Salut</a>
+          <a href="#" class="active">Hallo</a>
+          <a href="#">Holà</a>
+        </div>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article>
+        <pre>
+          <code>
+  &lt;div class="button-group margin"&gt;
+    &lt;a href="#"&gt;Salut&lt;/a&gt;
+    &lt;a href="#" class="active"&gt;Hallo&lt;/a&gt;
+    &lt;a href="#"&gt;Holà&lt;/a&gt;
+  &lt;/div&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+
+    <!-- FORMS & INPUTS -->
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="form">Form & input</h1>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <form action="#" class="form">
+          <div class="layout">
+            <div class="column flex-12 padding">
+              <input type="email" placeholder="Email"/>
+            </div>
+            <div class="column flex-6 padding">
+              <input type="password" placeholder="Password"/>
+            </div>
+            <div class="column flex-6 padding">
+              <input type="password" placeholder="Repeat Password"/>
+            </div>
+            <div class="column flex-12 padding">
+              <input type="submit" value="Sign in" class="button button-primary">
+            </div>
+          </div>
+        </form>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article>
+        <pre>
+          <code>
+  &lt;form class="form"&gt;
+    &lt;div class="column flex-12 padding"&gt;
+      &lt;input type="email" placeholder="Email"/&gt;
+    &lt;/div&gt;
+
+    &lt;div class="column flex-6 padding"&gt;
+      &lt;input type="password" placeholder="Password"/&gt;
+    &lt;/div&gt;
+
+    &lt;div class="column flex-12 padding"&gt;
+      &lt;input type="submit" value="Sign in" class="button button-primary"/&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+
+    <!-- TABLES -->
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="table">Table</h1>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <div class="margin">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Grenoble Foot 38</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>La Berrichonne Chateauroux</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Le Mans FC</td>
+                <td>32</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="margin">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Team</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Grenoble Foot 38</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>La Berrichonne Chateauroux</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Le Mans FC</td>
+                <td>32</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article>
+        <pre>
+          <code>
+  &lt;table class="table table-borderless"&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Position&lt;/th&gt;
+        &lt;th&gt;Team&lt;/th&gt;
+        &lt;th&gt;Points&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Grenoble Foot 38&lt;/td&gt;
+        &lt;td&gt;37&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+
+    <!-- LIST & MENU -->
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="list-menu">List & menu</h1>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card padding">
+        <ul class="list">
+          <li>Salut</li>
+          <li>Hello</li>
+          <li>Holà</li>
+        </ul>
+
+        <ol class="menu">
+          <li>Salut</li>
+          <li class="active">Hello</li>
+          <li>Holà</li>
+        </ol>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article>
+        <pre>
+          <code>
+  &lt;ul class="list"&gt;
+    &lt;li&gt;Salut&lt;/li&gt;
+    &lt;li&gt;Hallo&lt;/li&gt;
+    &lt;li&gt;Holà&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul class="menu"&gt;
+    &lt;li&gt;Salut&lt;/li&gt;
+    &lt;li class="active"&gt;Hallo&lt;/li&gt;
+    &lt;li&gt;Holà&lt;/li&gt;
+  &lt;/ul&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+
+    <!-- CARD -->
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="card">Card</h1>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <img src="https://picsum.photos/300/300" alt="Cool image">
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua.</p>
+        <p><a href="#" class="button button-primary">Toast</a></p>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article>
+        <pre>
+          <code>
+  &lt;article class="card"&gt;
+    &lt;img src="https://picsum.photos/300/300" alt="Cool image"&gt;
+    &lt;h2&gt;Title&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#" class="button button-primary"&gt;Toast&lt;/a&gt;&lt;/p&gt;
+  &lt;/article&gt;
+          </code>
+        </pre>
+      </article>
+    </div>
+
+    <!-- Grid -->
+    <div class="column flex-12 padding" style="margin-top: 100px">
+      <h1 id="grid">Grid</h1>
+    </div>
+    <div class="column flex-12 padding">
+      <article class="card">
+        <p>flex-12</p>
+      </article>
+    </div>
+    <div class="column flex-11 padding">
+      <article class="card">
+        <p>flex-11</p>
+      </article>
+    </div>
+    <div class="column flex-1 padding">
+      <article class="card">
+        <p>1</p>
+      </article>
+    </div>
+    <div class="column flex-10 padding">
+      <article class="card">
+        <p>flex-10</p>
+      </article>
+    </div>
+    <div class="column flex-2 padding">
+      <article class="card">
+        <p>flex-2</p>
+      </article>
+    </div>
+    <div class="column flex-9 padding">
+      <article class="card">
+        <p>flex-9</p>
+      </article>
+    </div>
+    <div class="column flex-3 padding">
+      <article class="card">
+        <p>flex-3</p>
+      </article>
+    </div>
+    <div class="column flex-8 padding">
+      <article class="card">
+        <p>flex-8</p>
+      </article>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>flex-4</p>
+      </article>
+    </div>
+    <div class="column flex-7 padding">
+      <article class="card">
+        <p>flex-7</p>
+      </article>
+    </div>
+    <div class="column flex-5 padding">
+      <article class="card">
+        <p>flex-5</p>
+      </article>
+    </div>
+    <div class="column flex-6 padding">
+      <article class="card">
+        <p>flex-6</p>
+      </article>
+    </div>
+    <div class="column flex-6 padding">
+      <article class="card">
+        <p>flex-6</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="layout justify-between">
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>justify-between</p>
+      </article>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>flex-4</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="layout justify-around">
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>justify-around</p>
+      </article>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>flex-4</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="layout justify-center">
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>justify-center</p>
+      </article>
+    </div>
+    <div class="column flex-4 padding">
+      <article class="card">
+        <p>flex-4</p>
+      </article>
+    </div>
+  </div>
+</main>
+</body>
+</html>
