@@ -133,9 +133,11 @@ button {
 
 /* FORM & INPUT */
 
-.form input {
+.form input,
+.form textarea {
     width: 100%;
     display: inline-block;
+    font-size: 1rem;
     text-decoration: none;
     margin: 0;
     border-radius: 2px;
@@ -147,11 +149,13 @@ button {
     appearance: none;
 }
 
-.form input:focus {
+.form input:focus,
+.form textarea:focus {
     border-color: var(--blue);
 }
 
-.form input:invalid {
+.form input:invalid,
+.form textarea:invalid {
     border-color: var(--red);
 }
 
