@@ -30,6 +30,7 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
 
 :root {
+<<<<<<< HEAD
   --white: #FFFFFF;
   --black: #1E2028;
   --red: #FF4081;
@@ -39,6 +40,17 @@
   --blue: #536DFE;
   --light-blue: #00B0FF;
   --dark-blue: #304FFE;
+=======
+    --white: #FFFFFF;
+    --black: #1E2028;
+    --red: #FF4081;
+    --grey: #CFD8DC;
+    --light-grey: #ECEFF1;
+    --dark-grey: #A6AFB3;
+    --blue: #536DFE;
+    --light-blue: #00B0FF;
+    --dark-blue: #203DE3;
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 }
 
 /* Grid
@@ -58,11 +70,48 @@
   align-content: flex-start;
 }
 
+<<<<<<< HEAD
 .row.justify-start {justify-content: flex-start;}
 .row.justify-end {justify-content: flex-end;}
 .row.justify-center {justify-content: center;}
 .row.justify-around {justify-content: space-around;}
 .row.justify-between {justify-content: space-between;}
+=======
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* TYPOGRAPHY */
+
+h5, h6, p, a, b, i, u, small, span, strong, button, input, li, th, td, code, blockquote {
+    font-size: 1.2rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--blue);
+    transition: 0.2s;
+}
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 
 .row.items-start {align-items: flex-start;}
 .row.items-end {align-items: flex-end;}
@@ -154,7 +203,38 @@
   .columns, .column {
     flex-basis: 100%;
     width: 100%;
+<<<<<<< HEAD
   }
+=======
+    border-collapse: collapse;
+    border-radius: 2px;
+    border-style: hidden;
+    box-shadow: 0 0 0 1px var(--grey);
+    overflow: hidden;
+    text-align: left;
+}
+
+.table thead tr,
+.table tbody tr {
+    border-bottom: 1px solid var(--grey);
+}
+
+.table tbody tr:hover {
+    background: var(--light-grey);
+}
+
+.table th,
+.table td {
+    margin: 5px;
+    padding: 0.4em 1.2em;
+}
+
+/* LIST */
+
+.list {
+    list-style-type: circle;
+    margin: 0;
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 }
 
 
@@ -163,12 +243,22 @@
 /* html is set to 62.5% so that all the REM measurements throughout Skeleton are based on 10px sizing. So basically 1.5rem = 15px */
 html { font-size: 62.5%; }
 
+<<<<<<< HEAD
 body {
   font-size: 1.5em;
   line-height: 1.6;
   font-weight: 400;
   font-family: "Varela Round", Arial, sans-serif;
   color: var(--black);
+=======
+.menu {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid var(--grey);
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 }
 
 
@@ -413,6 +503,7 @@ ul {
   margin-top: 0;
 }
 
+<<<<<<< HEAD
 li {
   margin: 0;
   padding: 6px 10px;
@@ -487,6 +578,110 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 .u-max-full-width {
   max-width: 100%;
   box-sizing: border-box;
+=======
+/* GRID */
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.row.justify-start {justify-content: flex-start;}
+.row.justify-end {justify-content: flex-end;}
+.row.justify-center {justify-content: center;}
+.row.justify-around {justify-content: space-around;}
+.row.justify-between {justify-content: space-between;}
+
+.row.items-start {align-items: flex-start;}
+.row.items-end {align-items: flex-end;}
+.row.items-center {align-items: center;}
+.row.items-baseline {align-items: baseline;}
+.row.items-stretch {align-items: stretch;}
+
+.row.content-start {align-content: flex-start;}
+.row.content-end {align-content: flex-end;}
+.row.content-center {align-content: center;}
+.row.content-around {align-content: space-around;}
+.row.content-between {align-content: space-between;}
+.row.content-stretch {align-content: stretch;}
+
+
+.column {
+    flex: 0 0 auto;
+    flex-grow: 0;
+    margin: 1px 0;
+    padding: 1rem;
+}
+
+.column-12 {
+    flex-basis: 100%;
+    width: 100%;
+}
+
+.column-11 {
+    flex-basis: 91.66666666%;
+    width: 91.66666666%;
+}
+
+.column-10 {
+    flex-basis: 83.33333334%;
+    width: 83.33333334%;
+}
+
+.column-9 {
+    flex-basis: 75%;
+    width: 75%;
+}
+
+.column-8 {
+    flex-basis: 66.66666666%;
+    width: 66.66666666%;
+}
+
+.column-7 {
+    flex-basis: 58.33333337%;
+    width: 58.33333337%;
+}
+
+.column-6 {
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.column-5 {
+    flex-basis: 41.66666667%;
+    width: 41.66666667%;
+}
+
+.column-4 {
+    flex-basis: 33.33333333%;
+    width: 33.33333333%;
+}
+
+.column-3 {
+    flex-basis: 25%;
+    width: 25%;
+}
+
+.column-2 {
+    flex-basis: 16.66666664%;
+    width: 16.66666664%;
+}
+
+.column-1 {
+    flex-basis: 8.33333332%;
+    width: 8.33333332%;
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 }
 
 .u-pull-right { float: right; }
@@ -505,6 +700,7 @@ hr {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+<<<<<<< HEAD
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
@@ -514,6 +710,14 @@ hr {
   clear: both;
 }
 
+=======
+/* UTILITIES */
+
+* .active {
+    background: var(--blue);
+    color: white;
+}
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -524,12 +728,16 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
+<<<<<<< HEAD
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
+=======
+/* CODE */
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
@@ -537,5 +745,43 @@ there.
 /* Larger than desktop */
 @media (min-width: 1000px) {}
 
+<<<<<<< HEAD
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+=======
+pre code {
+    color: white;
+    font-family: 'Source Code Pro', sans-serif;
+    line-height: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 960px) and (max-width: 1264px) {
+    * main {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    * main {
+        width: 90%;
+    }
+
+    * .row .column {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    * main {
+        width: 100%;
+    }
+
+    * .row .column {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+>>>>>>> 6a294d97b067ad0cec144c7439fe8bb2d97c2887

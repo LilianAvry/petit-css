@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lil UI</title>
   <link rel="stylesheet" href="lil.css">
 </head>
@@ -10,15 +11,15 @@
 <nav class="navigation navigation-fixed">
   <h1>Title</h1>
   <ul>
-    <li><a href="">One</a></li>
-    <li><a href="">Two</a></li>
-    <li><a href="">Three</a></li>
+    <li><a href="#">One</a></li>
+    <li><a href="#">Two</a></li>
+    <li><a href="#">Three</a></li>
   </ul>
 </nav>
 
 <main>
-    <div class="layout justify-center">
-        <div class="column flex-6 padding" style="text-align: center; margin-top: 100px;">
+    <div class="row justify-center">
+        <div class="column column-6" style="text-align: center; margin-top: 100px;">
             <article class="card" style="padding: 100px 0;">
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>
@@ -28,28 +29,28 @@
             </article>
         </div>
     </div>
-    <div class="layout justify-around">
-        <div class="column flex-3 padding" style="text-align: center;">
+    <div class="row justify-around">
+        <div class="column column-3" style="text-align: center;">
             <h3>Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua.</p>
             <p><a href="#" class="button button-primary">More</a></p>
         </div>
-        <div class="column flex-3 padding" style="text-align: center;">
+        <div class="column column-3" style="text-align: center;">
             <h3>Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua.</p>
             <p><a href="#" class="button button-primary">More</a></p>
         </div>
-        <div class="column flex-3 padding" style="text-align: center;">
+        <div class="column column-3" style="text-align: center;">
             <h3>Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua.</p>
             <p><a href="#" class="button button-primary">More</a></p>
         </div>
     </div>
-    <div class="layout justify-around">
-        <div class="column flex-5 padding">
+    <div class="row justify-around">
+        <div class="column column-5">
             <h3>Title</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
@@ -57,18 +58,18 @@
                 mollit anim id est laborum.</p>
             <p><a href="#" class="button button-primary">More</a></p>
         </div>
-        <div class="column flex-5 padding">
+        <div class="column column-5">
             <article class="card">
                 <h1>Contact us !</h1>
                 <form action="#" class="form">
-                    <div class="layout">
-                        <div class="column flex-12 padding">
+                    <div class="row">
+                        <div class="column column-12">
                             <input type="email" placeholder="Email"/>
                         </div>
-                        <div class="column flex-12 padding">
+                        <div class="column column-12">
                             <textarea placeholder="Your message here"></textarea>
                         </div>
-                        <div class="column flex-12 padding">
+                        <div class="column column-12">
                             <input type="submit" value="Submit" class="button button-primary">
                         </div>
                     </div>
