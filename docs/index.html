@@ -2,48 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   <title>Lil UI</title>
   <link rel="stylesheet" href="lil.css">
+
+  <style>
+    .grid-marker {
+      box-shadow: 0 0 0 1px #CFD8DC;
+      border-radius: 2px;
+    }
+  </style>
 </head>
 <body>
 
-<nav class="navigation navigation-fixed">
-  <h1>Title</h1>
-  <ul>
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#typography">Typography</a></li>
-    <li><a href="#button">Button</a></li>
-    <li><a href="#button-group">Button group</a></li>
-    <li><a href="#form">Form</a></li>
-    <li><a href="#table">Table</a></li>
-    <li><a href="#list-menu">List</a></li>
-    <li><a href="#card">Card</a></li>
-    <li><a href="#grid">Grid</a></li>
-  </ul>
-</nav>
-
-<main>
-
+<main class="container">
   <!-- TYPOGRAPHY -->
   <div class="row">
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="typography">Typography</h1>
     </div>
-    <div class="column column-4">
+    <div class="twelve columns">
       <article class="">
         <h1>Heading 1</h1>
         <h2>Heading 2</h2>
         <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h6>Heading 5</h6>
-        <h5>Heading 6</h5>
+        <h4>Heading 4, 5, 6</h4>
         <p>Lorem Ipsum</p>
         <p>Lorem <strong>Ipsum</strong></p>
         <a href="#" class="link">Lorem Ipsum</a>
-      </article>
+      
     </div>
-    <div class="column column-8">
+    <div class="twelve columns">
       <article>
         <pre>
           <code>
@@ -57,60 +46,50 @@
   &lt;a href="#" class="link"&gt;Lorem Ipsum&lt;/a&gt;
           </code>
         </pre>
-      </article>
+      
     </div>
   </div>
 
   <!-- BUTTONS -->
   <div class="row">
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="button">Button</h1>
     </div>
-    <div class="column column-12">
-      <article class="card">
-        <div class="column">
-          <a href="#" class="button button-primary">primary link</a>
-        </div>
-        <div class="column">
-          <a href="#" class="button button-secondary">secondary link</a>
-        </div>
-        <div class="column">
-          <button class="button button-primary">primary button</button>
-        </div>
-        <div class="column">
-          <button class="button button-secondary">secondary button</button>
-        </div>
-      </article>
+    <div class="twelve columns">
+      <a href="#" class="button primary">primary link</a>
+      <a href="#" class="button secondary">secondary link</a>
+      <button class="button primary">primary button</button>
+      <button class="button secondary">secondary button</button>
     </div>
-    <div class="column column-12">
+    <div class="twelve columns">
       <article>
         <pre>
           <code>
-  &lt;a href="#" class="button button-primary"&gt;primary link&lt;/a&gt;
-  &lt;a href="#" class="button button-secondary"&secondary link&lt;/a&gt;
-  &lt;button href="#" class="button button-primary"&gt;primary link&lt;/button&gt;
-  &lt;button href="#" class="button button-secondary"&gt;secondary link&lt;/button&gt;
+  &lt;a href="#" class="button primary"&gt;primary link&lt;/a&gt;
+  &lt;a href="#" class="button secondary"&secondary link&lt;/a&gt;
+  &lt;button href="#" class="button primary"&gt;primary link&lt;/button&gt;
+  &lt;button href="#" class="button secondary"&gt;secondary link&lt;/button&gt;
           </code>
         </pre>
-      </article>
+      
     </div>
 
     <!-- BUTTON GROUPS -->
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="button-group">Button group</h1>
     </div>
-    <div class="column column-12">
-      <article class="card">
+    <div class="twelve columns">
+      
         <div class="column">
-          <div class="button-group">
-            <a href="#">Salut</a>
-            <a href="#" class="active">Hallo</a>
-            <a href="#">Holà</a>
+          <div class="buttons">
+            <a class="button" href="#">Salut</a>
+            <a class="button active" href="#">Hallo</a>
+            <a class="button" href="#">Holà</a>
           </div>
         </div>
-      </article>
+      
     </div>
-    <div class="column column-12">
+    <div class="twelve columns">
       <article>
         <pre>
           <code>
@@ -121,92 +100,86 @@
   &lt;/div&gt;
           </code>
         </pre>
-      </article>
+      
     </div>
 
     <!-- FORMS & INPUTS -->
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="form">Form & input</h1>
     </div>
-    <div class="column column-12">
-      <article class="card">
-        <form action="#" class="form">
-          <div class="row">
-            <div class="column column-12">
-              <input type="email" placeholder="Email"/>
-            </div>
-            <div class="column column-6">
-              <input type="password" placeholder="Password"/>
-            </div>
-            <div class="column column-6">
-              <input type="password" placeholder="Repeat Password"/>
-            </div>
-            <div class="column column-12">
-              <input type="submit" value="Sign in" class="button button-primary">
-            </div>
+    <div class="twelve columns">
+      <form action="#" class="form">
+        <div class="row">
+          <div class="twelve columns">
+            <input type="email" placeholder="Email"/>
           </div>
-        </form>
-      </article>
+          <div class="six columns">
+            <input type="password" placeholder="Password"/>
+          </div>
+          <div class="six columns">
+            <input type="password" placeholder="Repeat Password"/>
+          </div>
+          <div class="twelve columns">
+            <input type="submit" value="Sign in" class="button primary">
+          </div>
+        </div>
+      </form>
     </div>
-    <div class="column column-12">
+    <div class="twelve columns">
       <article>
         <pre>
           <code>
   &lt;form class="form"&gt;
-    &lt;div class="column column-12"&gt;
+    &lt;div class="twelve columns"&gt;
       &lt;input type="email" placeholder="Email"/&gt;
     &lt;/div&gt;
 
-    &lt;div class="column column-6"&gt;
+    &lt;div class="six columns"&gt;
       &lt;input type="password" placeholder="Password"/&gt;
     &lt;/div&gt;
 
-    &lt;div class="column column-12"&gt;
-      &lt;input type="submit" value="Sign in" class="button button-primary"/&gt;
+    &lt;div class="twelve columns"&gt;
+      &lt;input type="submit" value="Sign in" class="button primary"/&gt;
     &lt;/div&gt;
   &lt;/form&gt;
           </code>
         </pre>
-      </article>
+      
     </div>
 
     <!-- TABLES -->
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="table">Table</h1>
     </div>
-    <div class="column column-12">
-      <article class="card">
-        <div class="column">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Position</th>
-                <th>Team</th>
-                <th>Points</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Grenoble Foot 38</td>
-                <td>37</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>La Berrichonne Chateauroux</td>
-                <td>34</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Le Mans FC</td>
-                <td>32</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </article>
+    <div class="twelve columns">
+      <table>
+        <thead>
+          <tr>
+            <th>Position</th>
+            <th>Team</th>
+            <th>Points</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Grenoble Foot 38</td>
+            <td>37</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>La Berrichonne Chateauroux</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Le Mans FC</td>
+            <td>32</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="column column-12">
+    <div class="twelve columns">
       <article>
         <pre>
           <code>
@@ -228,40 +201,25 @@
   &lt;/table&gt;
           </code>
         </pre>
-      </article>
+      
     </div>
 
     <!-- LIST & MENU -->
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="list-menu">List & menu</h1>
     </div>
-    <div class="column column-6">
-      <article class="card">
-        <div class="column">
-          <ul class="list">
-            <li>Salut</li>
-            <li>Hello</li>
-            <li>Holà</li>
-          </ul>
-        </div>
-      </article>
+    <div class="twelve columns">
+      <ul>
+        <li>Salut</li>
+        <li>Hello</li>
+        <li>Holà</li>
+      </ul>
     </div>
-    <div class="column column-6">
-      <article class="card">
-        <div class="column">    
-          <ol class="menu">
-            <li>Salut</li>
-            <li class="active">Hello</li>
-            <li>Holà</li>
-          </ol>
-        </div>
-      </article>
-    </div>
-    <div class="column column-12">
+    <div class="twelve columns">
       <article>
         <pre>
           <code>
-  &lt;ul class="list"&gt;
+  &lt;ul&gt;
     &lt;li&gt;Salut&lt;/li&gt;
     &lt;li&gt;Hallo&lt;/li&gt;
     &lt;li&gt;Holà&lt;/li&gt;
@@ -274,144 +232,104 @@
   &lt;/ul&gt;
           </code>
         </pre>
-      </article>
-    </div>
-
-    <!-- CARD -->
-    <div class="column column-12" style="margin-top: 100px">
-      <h1 id="card">Card</h1>
-    </div>
-    <div class="column column-4">
-      <article class="card">
-        <img src="https://picsum.photos/300/300" alt="Cool image">
-        <h1>Title</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-          et dolore magna aliqua.</p>
-        <p><a href="#" class="button button-primary">Toast</a></p>
-      </article>
-    </div>
-    <div class="column column-8">
-      <article>
-        <pre>
-          <code>
-  &lt;article class="card"&gt;
-    &lt;img src="https://picsum.photos/300/300" alt="Cool image"&gt;
-    &lt;h2&gt;Title&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum&lt;/p&gt;
-    &lt;p&gt;&lt;a href="#" class="button button-primary"&gt;Toast&lt;/a&gt;&lt;/p&gt;
-  &lt;/article&gt;
-          </code>
-        </pre>
-      </article>
+      
     </div>
 
     <!-- Grid -->
-    <div class="column column-12" style="margin-top: 100px">
+    <div class="twelve columns" style="margin-top: 100px">
       <h1 id="grid">Grid</h1>
     </div>
-    <div class="column column-12">
-      <article class="card">
+    <div class="twelve columns grid-marker">
+      
         <p>column-12</p>
-      </article>
+      
     </div>
-    <div class="column column-11">
-      <article class="card">
+    <div class="eleven columns grid-marker">
+      
         <p>column-11</p>
-      </article>
+      
     </div>
-    <div class="column column-1">
-      <article class="card">
+    <div class="one column grid-marker">
+      
         <p>1</p>
-      </article>
+      
     </div>
-    <div class="column column-10">
-      <article class="card">
+    <div class="ten columns grid-marker">
+      
         <p>column-10</p>
-      </article>
+      
     </div>
-    <div class="column column-2">
-      <article class="card">
+    <div class="two columns grid-marker">
+      
         <p>column-2</p>
-      </article>
+      
     </div>
-    <div class="column column-9">
-      <article class="card">
+    <div class="nine columns grid-marker">
+      
         <p>column-9</p>
-      </article>
+      
     </div>
-    <div class="column column-3">
-      <article class="card">
+    <div class="three columns grid-marker">
+      
         <p>column-3</p>
-      </article>
+      
     </div>
-    <div class="column column-8">
-      <article class="card">
+    <div class="eight columns grid-marker">
+      
         <p>column-8</p>
-      </article>
+      
     </div>
-    <div class="column column-4">
-      <article class="card">
+    <div class="four columns grid-marker">
+      
         <p>column-4</p>
-      </article>
+      
     </div>
-    <div class="column column-7">
-      <article class="card">
+    <div class="seven columns grid-marker">
+      
         <p>column-7</p>
-      </article>
+      
     </div>
-    <div class="column column-5">
-      <article class="card">
+    <div class="five columns grid-marker">
+      
         <p>column-5</p>
-      </article>
+      
     </div>
-    <div class="column column-6">
-      <article class="card">
+    <div class="six columns grid-marker">
+      
         <p>column-6</p>
-      </article>
+      
     </div>
-    <div class="column column-6">
-      <article class="card">
+    <div class="six columns grid-marker">
+      
         <p>column-6</p>
-      </article>
+      
     </div>
   </div>
 
   <div class="row justify-between">
-    <div class="column column-4">
-      <article class="card">
-        <p>justify-between</p>
-      </article>
+    <div class="four columns">
+      <p>justify-between</p>
     </div>
-    <div class="column column-4">
-      <article class="card">
-        <p>column-4</p>
-      </article>
+    <div class="four columns">
+      <p>column-4</p>
     </div>
   </div>
 
   <div class="row justify-around">
-    <div class="column column-4">
-      <article class="card">
-        <p>justify-around</p>
-      </article>
+    <div class="four columns grid-marker">
+      <p>justify-around</p>
     </div>
-    <div class="column column-4">
-      <article class="card">
-        <p>column-4</p>
-      </article>
+    <div class="four columns grid-marker">
+      <p>column-4</p>
     </div>
   </div>
 
   <div class="row justify-center">
-    <div class="column column-4">
-      <article class="card">
-        <p>justify-center</p>
-      </article>
+    <div class="four columns grid-marker">
+      <p>justify-center</p>
     </div>
-    <div class="column column-4">
-      <article class="card">
-        <p>column-4</p>
-      </article>
+    <div class="four columns grid-marker">
+      <p>column-4</p>
     </div>
   </div>
 </main>
