@@ -35,7 +35,6 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
     color: #333;
-    border-color: #333;
     background-color: #F0F0F0;
     outline: 0;
 }
@@ -47,7 +46,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
     background-color: #555;
-    border-color: #555;
+    border-color: #333;
 }
 
 .button.button-primary:hover,
@@ -62,5 +61,4 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
     color: #FFF;
     background-color: #333;
-    border-color: #333;
 }
