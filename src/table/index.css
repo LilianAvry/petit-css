@@ -1,0 +1,28 @@
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+table {
+    border-collapse: collapse;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #555;
+    border-style: hidden;
+    overflow: hidden;
+}
+
+th,
+td {
+    width: 100%;
+    padding: .6rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    box-sizing: border-box;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
