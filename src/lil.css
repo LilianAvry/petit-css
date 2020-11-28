@@ -1,0 +1,421 @@
+/* Button -------------------------------- */
+/*
+Based on Skeleton
+http://getskeleton.com/
+*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: .05rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 1px solid #555;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+    color: #333;
+    background-color: #F0F0F0;
+    outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+    color: #FFF;
+    background-color: #555;
+    border-color: #333;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+    color: #FFF;
+    background-color: #333;
+}
+
+/* Card -------------------------------- */
+.card {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+.card img {
+    width: 100%;
+    height: 220px;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    overflow: hidden;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.card .card-title {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+.card .card-text {
+    margin: 0;
+    padding: 1rem;
+    font-weight: lighter;
+}
+.card .card-actions {
+    margin: 0;
+    padding: 1rem;
+    text-align: right;
+    border-top: 1px solid #555;
+}
+
+/* Code -------------------------------- */
+/*
+Based on Skeleton
+http://getskeleton.com/
+*/
+code {
+    padding: .5rem;
+    font-size: 90%;
+    white-space: nowrap;
+    color: #F0F0F0;
+    background-color: #555;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+pre > code {
+    display: block;
+    white-space: pre;
+}
+
+/* Form -------------------------------- */
+/*
+Based on Skeleton
+http://getskeleton.com/
+*/
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #FFF;
+    border: 1px solid #888;
+    border-radius: 2px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+textarea {
+    min-height: 80px;
+    padding: 6px 0;
+}
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+select:hover,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #333;
+    outline: 0;
+}
+label,
+legend {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+
+/* Grid -------------------------------- */
+.row {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.row.justify-start {justify-content: flex-start;}
+.row.justify-end {justify-content: flex-end;}
+.row.justify-center {justify-content: center;}
+.row.justify-around {justify-content: space-around;}
+.row.justify-between {justify-content: space-between;}
+.row.items-start {align-items: flex-start;}
+.row.items-end {align-items: flex-end;}
+.row.items-center {align-items: center;}
+.row.items-baseline {align-items: baseline;}
+.row.items-stretch {align-items: stretch;}
+.row.content-start {align-content: flex-start;}
+.row.content-end {align-content: flex-end;}
+.row.content-center {align-content: center;}
+.row.content-around {align-content: space-around;}
+.row.content-between {align-content: space-between;}
+.row.content-stretch {align-content: stretch;}
+.column {
+    flex: 0 0 auto;
+    flex-grow: 0;
+    box-sizing: border-box;
+    margin: .5rem 0;
+    padding: 0 .5rem;
+}
+.column-12 {
+    flex-basis: 100%;
+    width: 100%;
+}
+.column-11 {
+    flex-basis: 91.66666666%;
+    width: 91.66666666%;
+}
+.column-10 {
+    flex-basis: 83.33333334%;
+    width: 83.33333334%;
+}
+.column-9 {
+    flex-basis: 75%;
+    width: 75%;
+}
+.column-8 {
+    flex-basis: 66.66666666%;
+    width: 66.66666666%;
+}
+.column-7 {
+    flex-basis: 58.33333337%;
+    width: 58.33333337%;
+}
+.column-6 {
+    flex-basis: 50%;
+    width: 50%;
+}
+.column-5 {
+    flex-basis: 41.66666667%;
+    width: 41.66666667%;
+}
+.column-4 {
+    flex-basis: 33.33333333%;
+    width: 33.33333333%;
+}
+.column-3 {
+    flex-basis: 25%;
+    width: 25%;
+}
+.column-2 {
+    flex-basis: 16.66666664%;
+    width: 16.66666664%;
+}
+.column-1 {
+    flex-basis: 8.33333332%;
+    width: 8.33333332%;
+}
+
+/* List -------------------------------- */
+/*
+Based on Skeleton
+http://getskeleton.com/
+*/
+ul { list-style: circle inside; }
+ol { list-style: decimal inside; }
+ol, ul {
+    border: 1px solid #555;
+    border-radius: 2px;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+    margin: 1rem 0;
+    font-size: 90%;
+}
+li {
+    padding: .6rem 1rem;
+    border-bottom: 1px solid #555;
+}
+li:last-of-type { border: none; }
+
+/* Navigation -------------------------------- */
+/*
+Based on Mutedblues' menu
+https://codepen.io/mutedblues/pen/MmPNPG
+*/
+.navigation {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.navigation a {color: #FFF;}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #333;
+}
+.navigation li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+.navigation li a:hover,
+.navigation .menu-button:hover {
+    background-color: #555;
+}
+.navigation .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.navigation .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+.navigation .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+.navigation .menu-icon .icon {
+    background: #FFF;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+.navigation .menu-icon .icon:before,
+.navigation .menu-icon .icon:after {
+    background: #FFF;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.navigation .menu-icon .icon:before {top: 5px;}
+.navigation .menu-icon .icon:after {top: -5px;}
+.navigation .menu-button {display: none;}
+.navigation .menu-button:checked ~ .menu {max-height: 500px;}
+.navigation .menu-button:checked ~ .menu-icon .icon {background: transparent;}
+.navigation .menu-button:checked ~ .menu-icon .icon:before {transform: rotate(-45deg);}
+.navigation .menu-button:checked ~ .menu-icon .icon:after {transform: rotate(45deg);}
+.navigation .menu-button:checked ~ .menu-icon:not(.steps) .icon:before,
+.navigation .menu-button:checked ~ .menu-icon:not(.steps) .icon:after {
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .navigation li {float: left;}
+    .navigation li a {padding: 20px 30px;}
+    .navigation .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .navigation .menu-icon {display: none;}
+}
+
+/* Table -------------------------------- */
+/*
+Based on Skeleton
+http://getskeleton.com/
+*/
+table {
+    border-collapse: collapse;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px #555;
+    border-style: hidden;
+    overflow: hidden;
+}
+th,
+td {
+    width: 100%;
+    padding: .6rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    box-sizing: border-box;
+}
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
