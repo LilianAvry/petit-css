@@ -36,6 +36,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
     color: #333;
     border-color: #333;
+    background-color: #F0F0F0;
     outline: 0;
 }
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lil CSS - Grid</title>
+
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+      .row div {
+        background-color: #F2F2F2;
+        border: 1px solid #555;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column column-12">
+        Column 12
+      </div>
+
+      <div class="column column-6">
+        Column 6
+      </div>
+      <div class="column column-6">
+        Column 6
+      </div>
+
+    </div>
+    <div class="row justify-start">
+
+      <div class="column column-4">
+        Column 4
+      </div>
+      <div class="column column-4">
+        Column 4
+      </div>
+
+    </div>
+    <div class="row justify-end">
+
+      <div class="column column-4">
+        Column 4
+      </div>
+      <div class="column column-4">
+        Column 4
+      </div>
+    </div>
+    <div class="row justify-center">
+
+      <div class="column column-4">
+        Column 4
+      </div>
+      <div class="column column-4">
+        Column 4
+      </div>
+    </div>
+    <div class="row justify-around">
+
+      <div class="column column-4">
+        Column 4
+      </div>
+      <div class="column column-4">
+        Column 4
+      </div>
+    </div>
+    <div class="row justify-between">
+
+      <div class="column column-4">
+        Column 4
+      </div>
+      <div class="column column-4">
+        Column 4
+      </div>
+    </div>
+  </body>
+</html>
