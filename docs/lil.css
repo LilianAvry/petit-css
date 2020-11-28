@@ -36,9 +36,10 @@
   --grey: #CFD8DC;
   --light-grey: #ECEFF1;
   --dark-grey: #A6AFB3;
-  --blue: #536DFE;
-  --light-blue: #00B0FF;
-  --dark-blue: #304FFE;
+  --blue: #00B0FF;
+  --dark-blue: #0091EA;
+  --light-blue: #C2ECFF;
+  --lighter-blue: #DEF5FF;
 }
 
 /* Grid
@@ -151,7 +152,7 @@
     padding: 0;
   }
 
-  * .row .columns, 
+  * .row .columns,
   * .row .column {
     flex-basis: 100%;
     width: 100%;
@@ -216,6 +217,7 @@ a:hover { color: var(--blue); }
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .button,
 .buttons
 button,
@@ -223,93 +225,90 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 38px;
-  padding: 0 30px;
+  height: 36px;
   text-align: center;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 38px;
-  letter-spacing: .1rem;
   text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
+  font-size: 1.5rem;
+  font-family: sans-serif;
   border-radius: 2px;
-  border: solid 1px transparent;
-  cursor: pointer;
+  padding: 0.4rem 1.2rem;
+  outline: none;
+  border: solid 2px transparent;
+  align-items: flex-start;
+  background-color: white;
   box-sizing: border-box;
-  transition: .2;
+  transition: .2s;
+  cursor: pointer;
 }
 
-.button.primary,
-button.primary,
-input[type="submit"].primary,
-input[type="reset"].primary,
-input[type="button"].primary {
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
   color: white;
   background-color: var(--blue);
 }
 
-.button.primary:hover,
-button.primary:hover,
-input[type="submit"].primary:hover,
-input[type="reset"].primary:hover,
-input[type="button"].primary:hover,
-.button.primary:focus,
-button.primary:focus,
-input[type="submit"].primary:focus,
-input[type="reset"].primary:focus,
-input[type="button"].primary:focus {
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
   background-color: var(--dark-blue);
 }
 
-.button.secondary,
-button.secondary,
-input[type="submit"].secondary,
-input[type="reset"].secondary,
-input[type="button"].secondary {
-  color: var(--black);
-  background-color: var(--light-grey);
+.button.button-secondary,
+button.button-secondary,
+input[type="submit"].button-secondary,
+input[type="reset"].button-secondary,
+input[type="button"].button-secondary {
+  color: var(--blue);
+  background-color: var(--lighter-blue);
 }
 
-.button.secondary:hover,
-button.secondary:hover,
-input[type="submit"].secondary:hover,
-input[type="reset"].secondary:hover,
-input[type="button"].secondary:hover,
-.button.secondary:focus,
-button.secondary:focus,
-input[type="submit"].secondary:focus,
-input[type="reset"].secondary:focus,
-input[type="button"].secondary:focus {
-  background-color: var(--grey);
+.button.button-secondary:hover,
+button.button-secondary:hover,
+input[type="submit"].button-secondary:hover,
+input[type="reset"].button-secondary:hover,
+input[type="button"].button-secondary:hover,
+.button.button-secondary:focus,
+button.button-secondary:focus,
+input[type="submit"].button-secondary:focus,
+input[type="reset"].button-secondary:focus,
+input[type="button"].button-secondary:focus {
+  background-color: var(--light-blue);
 }
 
 /* Button groups
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.buttons .button {
-  border-radius: 0;
-  color: var(--black);
-  background-color: var(--light-grey);
-  overflow-wrap: break-word;
+.button-group {
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.button-group * {
+  color: var(--blue);
+  background-color: var(--lighter-blue);
+  padding: 0.4em 1.2em;
+  cursor: pointer;
   float: left;
   text-decoration: none;
 }
 
-.buttons .button:hover { background-color: var(--grey); }
-
-.buttons .button.active {
+.button-group .button-selected {
   color: white;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 
-.buttons .button:first-of-type {
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-}
-
-.buttons .button:last-of-type {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+.button-group *:hover {
+  color: var(--blue);
+  background-color: var(--light-blue);
 }
 
 /* Forms
@@ -338,8 +337,8 @@ select {
 
 textarea {
   min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 0;
+  margin: 0 6px;
 }
 
 input[type="email"]:hover,
