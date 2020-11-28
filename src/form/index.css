@@ -1,5 +1,7 @@
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Originally from Skeleton
+http://getskeleton.com/
+*/
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -12,7 +14,6 @@ textarea {
     -moz-appearance: none;
     appearance: none;
 }
-
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -25,17 +26,24 @@ select {
     height: 38px;
     padding: 6px 10px;
     background-color: #FFF;
-    border: 1px solid #555;
+    border: 1px solid #888;
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
 }
-
 textarea {
     min-height: 80px;
     padding: 6px 0;
 }
-
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+select:hover,
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -48,14 +56,12 @@ select:focus {
     border-color: #333;
     outline: 0;
 }
-
 label,
 legend {
     display: block;
     margin-bottom: .5rem;
     font-weight: 400;
 }
-
 fieldset {
     padding: 0;
     border-width: 0;
