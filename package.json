@@ -1,0 +1,28 @@
+{
+  "name": "lil-css",
+  "version": "0.0.1",
+  "description": "A small stylesheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LilianAvry/lil-css.git"
+  },
+  "keywords": [
+    "small",
+    "light",
+    "lite",
+    "css",
+    "style",
+    "sheet",
+    "stylesheet"
+  ],
+  "author": "Lilian Avry Chrétienne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LilianAvry/lil-css/issues"
+  },
+  "homepage": "https://github.com/LilianAvry/lil-css#readme"
+}
