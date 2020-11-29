@@ -3,17 +3,21 @@ Based on Skeleton
 http://getskeleton.com/
 */
 table {
+    background-color: #FFF;
     border-collapse: collapse;
     border-radius: 2px;
-    box-shadow: 0 0 0 1px #555;
     border-style: hidden;
+    box-shadow: 0 0 0 1px #DDD;
     overflow: hidden;
 }
+
+thead {background-color: #EEE}
+
 th,
 td {
     width: 100%;
     padding: .6rem 1rem;
     text-align: left;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #DDD;
     box-sizing: border-box;
 }

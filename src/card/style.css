@@ -3,7 +3,7 @@
     box-sizing: border-box;
     display: inline-block;
     background: #FFF;
-    border: 1px solid #555;
+    border: 1px solid #DDD;
     border-radius: 2px;
 }
 .card img {
@@ -30,5 +30,5 @@
     margin: 0;
     padding: 1rem;
     text-align: right;
-    border-top: 1px solid #555;
+    background-color: #EEE;
 }

@@ -3,7 +3,7 @@
 Based on Skeleton
 http://getskeleton.com/
 */
-.button,
+a[class^="button"],
 button,
 input[type="submit"],
 input[type="reset"],
@@ -27,52 +27,52 @@ input[type="button"] {
     box-sizing: border-box;
 }
 
-.button.button-secondary,
+a.button-secondary,
 button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: #555;
-    background-color: transparent;
-    border: 1px solid #555;
+    color: #333;
+    background-color: #EEE;
+    border-color: #EEE;
 }
 
-.button.button-secondary:hover,
+a.button-secondary:hover,
 button.button-secondary:hover,
 input[type="submit"].button-secondary:hover,
 input[type="reset"].button-secondary:hover,
 input[type="button"].button-secondary:hover,
-.button.button-secondary:focus,
+a.button-secondary:focus,
 button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    color: #333;
-    background-color: #F0F0F0;
+    background-color: #DDD;
+    border-color: #DDD;
 }
 
-.button.button-primary,
+a.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
     background-color: #555;
-    border-color: #333;
+    border-color: #555;
 }
 
-.button.button-primary:hover,
+a.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
 input[type="reset"].button-primary:hover,
 input[type="button"].button-primary:hover,
-.button.button-primary:focus,
+a.button-primary:focus,
 button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    color: #FFF;
     background-color: #333;
+    border-color: #333;
 }
 
 /* Card -------------------------------- */
@@ -81,7 +81,7 @@ input[type="button"].button-primary:focus {
     box-sizing: border-box;
     display: inline-block;
     background: #FFF;
-    border: 1px solid #555;
+    border: 1px solid #DDD;
     border-radius: 2px;
 }
 .card img {
@@ -108,7 +108,7 @@ input[type="button"].button-primary:focus {
     margin: 0;
     padding: 1rem;
     text-align: right;
-    border-top: 1px solid #555;
+    background-color: #EEE;
 }
 
 /* Code -------------------------------- */
@@ -122,7 +122,7 @@ code {
     white-space: nowrap;
     color: #F0F0F0;
     background-color: #555;
-    border: 1px solid #333;
+    border: 1px solid #555;
     border-radius: 2px;
 }
 
@@ -160,7 +160,7 @@ select {
     height: 38px;
     padding: .6rem;
     background-color: #FFF;
-    border: 1px solid #888;
+    border: 1px solid #CCC;
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
@@ -300,7 +300,7 @@ Based on Skeleton
 http://getskeleton.com/
 */
 .list {
-    border: 1px solid #555;
+    border: 1px solid #DDD;
     border-radius: 2px;
     list-style: none;
     padding-left: 0;
@@ -312,7 +312,7 @@ http://getskeleton.com/
 }
 .list li {
     padding: .6rem 1rem;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #DDD;
 }
 .list li:last-of-type { border: none; }
 
@@ -411,17 +411,21 @@ Based on Skeleton
 http://getskeleton.com/
 */
 table {
+    background-color: #FFF;
     border-collapse: collapse;
     border-radius: 2px;
-    box-shadow: 0 0 0 1px #555;
     border-style: hidden;
+    box-shadow: 0 0 0 1px #DDD;
     overflow: hidden;
 }
+
+thead {background-color: #EEE}
+
 th,
 td {
     width: 100%;
     padding: .6rem 1rem;
     text-align: left;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #DDD;
     box-sizing: border-box;
 }

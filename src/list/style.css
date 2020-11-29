@@ -3,7 +3,7 @@ Based on Skeleton
 http://getskeleton.com/
 */
 .list {
-    border: 1px solid #555;
+    border: 1px solid #DDD;
     border-radius: 2px;
     list-style: none;
     padding-left: 0;
@@ -15,6 +15,6 @@ http://getskeleton.com/
 }
 .list li {
     padding: .6rem 1rem;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #DDD;
 }
 .list li:last-of-type { border: none; }
