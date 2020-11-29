@@ -2,10 +2,273 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lil CSS</title>
-</head>
-<body>
 
-</body>
+  <link rel="stylesheet" href="src/normalize.css">
+  <link rel="stylesheet" href="src/lil.css">
+
+  <style>
+    .container section.row {
+      padding-top: 100px;
+    }
+    .sample-grid .row div[class^="column"] {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+    .sample-grid .row div[class^="column"]:nth-child(odd) {
+      background-color: lightskyblue;
+    }
+    .sample-grid .row div[class^="column"]:nth-child(even) {
+      background-color: deepskyblue;
+    }
+  </style>
+</head>
+  <body>
+    <div class="navigation">
+      <a href="" class="logo">My Website</a>
+      <input class="menu-button" type="checkbox" id="menu-button" />
+      <label class="menu-icon" for="menu-button">
+        <span class="icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="#work">Our Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <section class="row">
+        <div class="column-12">
+          <h1>Grid</h1>
+        </div>
+        <div class="column-12 sample-grid">
+          <div class="row">
+            <div class="column-12">column-12</div>
+
+            <div class="column-11">column-11</div>
+            <div class="column-1">1</div>
+
+            <div class="column-10">column-10</div>
+            <div class="column-2">column-2</div>
+
+            <div class="column-9">column-9</div>
+            <div class="column-3">column-3</div>
+
+            <div class="column-8">column-8</div>
+            <div class="column-4">column-4</div>
+
+            <div class="column-7">column-7</div>
+            <div class="column-5">column-5</div>
+
+            <div class="column-6">column-6</div>
+            <div class="column-6">column-6</div>
+          </div>
+          <div class="row justify-start sample-grid">
+            <div class="column-3">justify-start</div>
+            <div class="column-3">column-3</div>
+          </div>
+          <div class="row justify-end sample-grid">
+            <div class="column-3">justify-end</div>
+            <div class="column-3">column-3</div>
+          </div>
+          <div class="row justify-between sample-grid">
+            <div class="column-3">justify-between</div>
+            <div class="column-3">column-3</div>
+          </div>
+          <div class="row justify-around sample-grid">
+            <div class="column-3">justify-around</div>
+            <div class="column-3">column-3</div>
+          </div>
+          <div class="row justify-center sample-grid">
+            <div class="column-3">justify-center</div>
+            <div class="column-3">column-3</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>Button</h1>
+        </div>
+        <div class="column-12">
+          <a class="button button-primary" href="#">Primary link</a>
+          <button class="button-primary">Primary button</button>
+          <input class="button-primary" type="submit" value="Primary submit">
+        </div>
+        <div class="column-12">
+          <a class="button button-secondary" href="#">Secondary link</a>
+          <button class="button-secondary">Secondary button</button>
+          <input class="button-secondary" type="submit" value="Secondary submit">
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>Form</h1>
+        </div>
+        <div class="column-12">
+          <form action="">
+            <div class="row">
+              <div class="column-4">
+                <label for="email-input">Your email</label>
+                <input type="email" id="email-input">
+              </div>
+              <div class="column-4">
+                <label for="password-input">Your password</label>
+                <input type="password" id="password-input">
+              </div>
+              <div class="column-4">
+                <label for="password-repeat-input">Repeat password</label>
+                <input type="password" id="password-repeat-input">
+              </div>
+              <div class="column-12">
+                <label for="country-select-list">Country</label>
+                <select id="country-select-list">
+                  <option value="finland">Finland</option>
+                  <option value="greece">Greece</option>
+                  <option value="slovakia">Slovakia</option>
+                </select>
+              </div>
+              <div class="column-12">
+                <label for="message-input">Message</label>
+                <textarea placeholder="Hi dude !" id="message-input"></textarea>
+              </div>
+              <div class="column-12">
+                <fieldset>
+                  <label for="dog-input">
+                    <input type="checkbox" id="dog-input">
+                    I like dogs
+                  </label>
+                  <label for="cat-input">
+                    <input type="checkbox" id="cat-input" disabled>
+                    I like cats
+                  </label>
+                </fieldset>
+              </div>
+              <div class="column-12">
+                <input class="button-primary" type="submit" value="Submit">
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>Table</h1>
+        </div>
+        <div class="column-12">
+          <table>
+            <thead>
+            <tr>
+              <th>Team</th>
+              <th>Points</th>
+              <th>Rank</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>GF38</td>
+              <td>22</td>
+              <td>#1</td>
+            </tr>
+            <tr>
+              <td>Chateauroux</td>
+              <td>19</td>
+              <td>#2</td>
+            </tr>
+            <tr>
+              <td>Chambly</td>
+              <td>17</td>
+              <td>#3</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>List</h1>
+        </div>
+        <div class="column-12">
+          <ul class="list">
+            <li>Item 1</li>
+            <li>
+              Item 2
+              <ul class="list">
+                <li>Item 2.1</li>
+                <li>Item 2.2</li>
+              </ul>
+            </li>
+            <li>Item 3</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>Card</h1>
+        </div>
+        <div class="column-4">
+          <article class="card">
+            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <h1 class="card-title">
+              Title
+            </h1>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet
+            </p>
+            <div class="card-actions">
+              <a class="button button-primary" href="#">link</a>
+            </div>
+          </article>
+        </div>
+        <div class="column-4">
+          <article class="card">
+            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <h1 class="card-title">
+              Title
+            </h1>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet
+            </p>
+            <div class="card-actions">
+              <a class="button button-primary" href="#">link</a>
+            </div>
+          </article>
+        </div>
+        <div class="column-4">
+          <article class="card">
+            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <h1 class="card-title">
+              Title
+            </h1>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet
+            </p>
+            <div class="card-actions">
+              <a class="button button-primary" href="#">link</a>
+            </div>
+          </article>
+        </div>
+        <div class="column-12">
+          <article class="card">
+            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <h1 class="card-title">
+              Title
+            </h1>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet
+            </p>
+            <div class="card-actions">
+              <a class="button button-primary" href="#">link</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
