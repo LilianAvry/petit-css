@@ -1,0 +1,23 @@
+h5, h6, p, b, i, u, span, strong, li, th, td, .link {
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.15rem;
+}
+h1 {font-size: 2rem;}
+h2 {font-size: 1.5rem;}
+h3 {font-size: 1.2rem;}
+h4 {font-size: 1.1rem;}
+small {font-size: .8rem;}
+.link {
+    text-decoration: none;
+    color: #6BA4FF;
+    transition: 0.2s;
+}
+.link:hover {color: #407AD6;}
+.text-justify {text-align: justify;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+.text-left {text-align: left;}
+.text-capitalize {text-transform: capitalize;}
+.text-uppercase {text-transform: uppercase;}
+.text-lowercase {text-transform: lowercase;}
