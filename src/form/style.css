@@ -24,17 +24,15 @@ input[type="password"],
 textarea,
 select {
     height: 38px;
-    padding: 6px 10px;
+    padding: .6rem;
     background-color: #FFF;
     border: 1px solid #888;
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
+    width: 100%;
 }
-textarea {
-    min-height: 80px;
-    padding: 6px 0;
-}
+textarea { min-height: 80px;}
 input[type="email"]:hover,
 input[type="number"]:hover,
 input[type="search"]:hover,

@@ -17,11 +17,3 @@ td {
     border-bottom: 1px solid #555;
     box-sizing: border-box;
 }
-th:first-child,
-td:first-child {
-    padding-left: 0;
-}
-th:last-child,
-td:last-child {
-    padding-right: 0;
-}
