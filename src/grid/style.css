@@ -1,3 +1,7 @@
+.container {
+    width: 70%;
+    margin: auto;
+}
 .row {
     display: flex;
     display: -webkit-flex;
@@ -23,7 +27,7 @@
 .row.content-around {align-content: space-around;}
 .row.content-between {align-content: space-between;}
 .row.content-stretch {align-content: stretch;}
-.column {
+div[class^="column"] {
     flex: 0 0 auto;
     flex-grow: 0;
     box-sizing: border-box;
@@ -77,4 +81,12 @@
 .column-1 {
     flex-basis: 8.33333332%;
     width: 8.33333332%;
+}
+
+@media (min-width: 768px) {
+    .container {width: 96%;}
+    .container .row .column {
+        flex-basis: 100%;
+        width: 100%;
+    }
 }

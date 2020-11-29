@@ -2,24 +2,19 @@
 Based on Skeleton
 http://getskeleton.com/
 */
-ul { list-style: circle inside; }
-ol { list-style: decimal inside; }
-ol, ul {
+.list {
     border: 1px solid #555;
     border-radius: 2px;
     list-style: none;
     padding-left: 0;
     margin-top: 0;
 }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
+.list .list {
     margin: 1rem 0;
     font-size: 90%;
 }
-li {
+.list li {
     padding: .6rem 1rem;
     border-bottom: 1px solid #555;
 }
-li:last-of-type { border: none; }
+.list li:last-of-type { border: none; }

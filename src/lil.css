@@ -11,7 +11,6 @@ input[type="button"] {
     display: inline-block;
     height: 38px;
     padding: 0 30px;
-    color: #555;
     text-align: center;
     font-size: 12px;
     font-weight: 400;
@@ -21,25 +20,35 @@ input[type="button"] {
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
+    border: 1px solid transparent;
     border-radius: 2px;
-    border: 1px solid #555;
+    outline: 0;
     cursor: pointer;
     box-sizing: border-box;
 }
 
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
+.button.button-secondary,
+button.button-secondary,
+input[type="submit"].button-secondary,
+input[type="reset"].button-secondary,
+input[type="button"].button-secondary {
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #555;
+}
+
+.button.button-secondary:hover,
+button.button-secondary:hover,
+input[type="submit"].button-secondary:hover,
+input[type="reset"].button-secondary:hover,
+input[type="button"].button-secondary:hover,
+.button.button-secondary:focus,
+button.button-secondary:focus,
+input[type="submit"].button-secondary:focus,
+input[type="reset"].button-secondary:focus,
+input[type="button"].button-secondary:focus {
     color: #333;
     background-color: #F0F0F0;
-    outline: 0;
 }
 
 .button.button-primary,
@@ -194,6 +203,10 @@ fieldset {
 
 
 /* Grid -------------------------------- */
+.container {
+    width: 70%;
+    margin: auto;
+}
 .row {
     display: flex;
     display: -webkit-flex;
@@ -219,7 +232,7 @@ fieldset {
 .row.content-around {align-content: space-around;}
 .row.content-between {align-content: space-between;}
 .row.content-stretch {align-content: stretch;}
-.column {
+div[class^="column"] {
     flex: 0 0 auto;
     flex-grow: 0;
     box-sizing: border-box;
@@ -275,32 +288,35 @@ fieldset {
     width: 8.33333332%;
 }
 
+@media (min-width: 768px) {
+    .container {width: 96%;}
+    .container .row .column {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
 /* List -------------------------------- */
 /*
 Based on Skeleton
 http://getskeleton.com/
 */
-ul { list-style: circle inside; }
-ol { list-style: decimal inside; }
-ol, ul {
+.list {
     border: 1px solid #555;
     border-radius: 2px;
     list-style: none;
     padding-left: 0;
     margin-top: 0;
 }
-ul ul,
-ul ol,
-ol ol,
-ol ul {
+.list .list {
     margin: 1rem 0;
     font-size: 90%;
 }
-li {
+.list li {
     padding: .6rem 1rem;
     border-bottom: 1px solid #555;
 }
-li:last-of-type { border: none; }
+.list li:last-of-type { border: none; }
 
 /* Navigation -------------------------------- */
 /*
