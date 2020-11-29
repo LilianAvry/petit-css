@@ -2,47 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Lil CSS</title>
 
   <link rel="stylesheet" href="src/normalize.css">
   <link rel="stylesheet" href="src/lil.css">
 
   <style>
-    .container section.row {
-      padding-top: 100px;
-    }
+    .container section.row {padding-top: 100px;}
     .sample-grid .row div[class^="column"] {
       padding-top: .5rem;
       padding-bottom: .5rem;
     }
-    .sample-grid .row div[class^="column"]:nth-child(odd) {
-      background-color: #EEE;
-    }
-    .sample-grid .row div[class^="column"]:nth-child(even) {
-      background-color: #DDD;
-    }
+    .sample-grid .row div[class^="column"]:nth-child(odd) {background-color: #EEE;}
+    .sample-grid .row div[class^="column"]:nth-child(even) {background-color: #DDD;}
   </style>
 </head>
   <body>
     <div class="navigation">
-      <a href="" class="logo">My Website</a>
+      <a href="" class="logo">Lil CSS</a>
       <input class="menu-button" type="checkbox" id="menu-button" />
       <label class="menu-icon" for="menu-button">
         <span class="icon"></span>
       </label>
       <ul class="menu">
-        <li><a href="#work">Our Work</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#careers">Careers</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#work">Typo</a></li>
+        <li><a href="#about">Button</a></li>
+        <li><a href="#careers">Form</a></li>
+        <li><a href="#contact">Table</a></li>
+        <li><a href="#contact">List</a></li>
+        <li><a href="#contact">Card</a></li>
+        <li><a href="#contact">Nav</a></li>
+        <li><a href="#contact">Github</a></li>
       </ul>
     </div>
 
     <div class="container">
       <section class="row">
-        <div class="column-12">
-
+        <div class="column-12 text-center">
+          <h1>Lil CSS</h1>
+          <p>
+            A minimalist but complete stylesheet
+          </p>
+          <a class="button-secondary" href="#">View on Github</a>
+          <a class="button-primary" href="#">Download</a>
         </div>
+        <div class="column-12">
+          <h1>What is Lil CSS ?</h1>
+        </div>
+        <div class="column-6">
+          <p>
+            Lil CSS is a lightweight css file made for small projects. It can also be a good base for your custom style.
+            It contains less than 500 lines of css but it is quiet complete as it comes with a flexbox grid,
+            a navigation menu and style for standard elements.
+            So you can build an simple website without using a larger framework.
+            For example, this website includes Lil CSS and only 7 lines of custom CSS.
+          </p>
+        </div>
+        <div class="column-6">
+          <p>
+            You can find the Github repository <a href="https://github.com/LilianAvry/lil-css" class="link">here</a>.
+            Some components are also based on <a href="https://getskeleton.com" class="link">Skeleton</a> and
+            the navigation menu is based on a <a href="https://codepen.io/mutedblues/pen/MmPNPG" class="link">pen made by Mutedblues</a>.
+            Do not hesitate to star or like this stuff.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="row">
+        <div class="column-12">
+          <h1>Typography</h1>
+        </div>
+        <div class="column-6">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+          <p>Paragraph</p>
+          <p><span>Text</span></p>
+          <p><strong>Strong</strong></p>
+          <p><u>Underlined</u></p>
+          <p><i>Italic</i></p>
+          <p><mark>Highlighted</mark></p>
+        </div>
+        <div class="column-6">
+          <pre><code>
+&lth1&gtHeading 1&lt/h1&gt
+&lth2&gtHeading 2&lt/h2&gt
+&lth3&gtHeading 3&lt/h3&gt
+&lth4&gtHeading 4&lt/h4&gt
+
+&lt!-- h5 and h6 both have the same size --&gt
+&lth5&gtHeading 5&lt/h5&gt
+&lth6&gtHeading 6&lt/h6&gt
+
+&ltp&gtParagraph&lt/p&gt
+&ltp&gt&ltspan&gtText&lt/span&gt&lt/p&gt
+&ltp&gt&ltstrong&gtStrong&lt/strong&gt&lt/p&gt
+&ltp&gt&ltu&gtUnderlined&lt/u&gt&lt/p&gt
+&ltp&gt&lti&gtItalic&lt/i&gt&lt/p&gt
+&ltp&gt&ltmark&gtHighlighted&lt/mark&gt&lt/p&gt
+          </code></pre>
       </section>
 
       <section class="row">
@@ -149,22 +214,22 @@
           <h1>Button</h1>
         </div>
         <div class="column-12">
-          <a class="button button-primary" href="#">Primary link</a>
+          <a class="button-primary" href="#">Primary link</a>
           <button class="button-primary">Primary button</button>
           <input class="button-primary" type="submit" value="Primary submit">
         </div>
         <div class="column-12">
-          <a class="button button-secondary" href="#">Secondary link</a>
+          <a class="button-secondary" href="#">Secondary link</a>
           <button class="button-secondary">Secondary button</button>
           <input class="button-secondary" type="submit" value="Secondary submit">
         </div>
         <div class="column-12">
           <pre><code>
-&lta class="button button-primary" href="#"&gtPrimary link&lt/a&gt
+&lta class="button-primary" href="#"&gtPrimary link&lt/a&gt
 &ltbutton class="button-primary"&gtPrimary button&lt/button&gt
 &ltinput class="button-primary" type="submit" value="Primary submit"&gt
 
-&lta class="button button-secondary" href="#"&gtSecondary link&lt/a&gt
+&lta class="button-secondary" href="#"&gtSecondary link&lt/a&gt
 &ltbutton class="button-secondary"&gtSecondary button&lt/button&gt
 &ltinput class="button-secondary" type="submit" value="Secondary submit"&gt
           </code></pre>
@@ -369,7 +434,7 @@
         </div>
         <div class="column-4">
           <article class="card">
-            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <img src="https://placedog.net/400/300/" alt="placeholder">
             <h1 class="card-title">
               Title
             </h1>
@@ -383,7 +448,7 @@
         </div>
         <div class="column-4">
           <article class="card">
-            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <img src="https://placedog.net/400/300/" alt="placeholder">
             <h1 class="card-title">
               Title
             </h1>
@@ -397,7 +462,7 @@
         </div>
         <div class="column-4">
           <article class="card">
-            <img src="https://via.placeholder.com/150/150" alt="placeholder">
+            <img src="https://placedog.net/400/300/" alt="placeholder">
             <h1 class="card-title">
               Title
             </h1>
@@ -423,6 +488,51 @@
     &lta class="button button-primary" href="#"&gtlink&lt/a&gt
   &lt/div&gt
 &lt/article&gt
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>Navigation</h1>
+        </div>
+        <div class="column-12">
+          <pre><code>
+&ltdiv class="navigation"&gt
+  &lta href="" class="logo"&gtMy Website&lt/a&gt
+  &ltinput class="menu-button" type="checkbox" id="menu-button" /&gt
+  &ltlabel class="menu-icon" for="menu-button"&gt
+    &ltspan class="icon"&gt&lt/span&gt
+  &lt/label&gt
+  &ltul class="menu"&gt
+    &ltli&gt&lta href="#product"&gtProduct&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#prices"&gtPrices&lt/a&gt&lt/li&gt
+    &ltli&gt&lta href="#contact"&gtContact&lt/a&gt&lt/li&gt
+  &lt/ul&gt
+&lt/div&gt
+          </code></pre>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column-12">
+          <h1>Code</h1>
+        </div>
+        <div class="column-12">
+          <pre><code>
+&ltpre&gt&ltcode&gt
+  &ltul class="list"&gt
+    &ltli&gtItem 1&lt/li&gt
+    &ltli&gt
+      Item 2
+      &ltul class="list"&gt
+        &ltli&gtItem 2.1&lt/li&gt
+        &ltli&gtItem 2.2&lt/li&gt
+      &lt/ul&gt
+    &lt/li&gt
+    &ltli&gtItem 3&lt/li&gt
+  &lt/ul&gt
+&lt/code&gt&lt/pre&gt
           </code></pre>
         </div>
       </section>

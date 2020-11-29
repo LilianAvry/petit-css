@@ -286,7 +286,7 @@ div[class^="column"] {
     width: 8.33333332%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
     .container {width: 96%;}
     .container .row .column {
         flex-basis: 100%;
@@ -394,7 +394,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
     top: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
     .navigation li {float: left;}
     .navigation li a {padding: 20px 30px;}
     .navigation .menu {
@@ -431,16 +431,22 @@ td {
 }
 
 /* Typography -------------------------------- */
-h5, h6, p, b, i, u, span, strong, li, th, td, .link {
+h5, h6, p, b, i, u, span, mark, strong, b, u, i, li, th, td, .link {
     font-size: 1rem;
     letter-spacing: 0.02rem;
-    line-height: 1.15rem;
+    line-height: 1.4rem;
 }
+p, b, i, u, span, mark, u, i, li, td, .link {font-weight: lighter;}
 h1 {font-size: 2rem;}
 h2 {font-size: 1.5rem;}
 h3 {font-size: 1.2rem;}
 h4 {font-size: 1.1rem;}
 small {font-size: .8rem;}
+mark {
+    padding: 2px 4px;
+    background-color: #EEE;
+    border-radius: 2px;
+}
 .link {
     text-decoration: none;
     color: #6BA4FF;
