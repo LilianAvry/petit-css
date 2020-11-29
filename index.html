@@ -86,6 +86,56 @@
             <div class="column-3">column-3</div>
           </div>
         </div>
+        <div class="column-12">
+          <pre><code>
+&ltdiv class="row"&gt
+  &ltdiv class="column-12"&gtcolumn-12&lt/div&gt
+
+  &ltdiv class="column-11"&gtcolumn-11&lt/div&gt
+  &ltdiv class="column-1"&gt1&lt/div&gt
+
+  &ltdiv class="column-10"&gtcolumn-10&lt/div&gt
+  &ltdiv class="column-2"&gtcolumn-2&lt/div&gt
+
+  &ltdiv class="column-9"&gtcolumn-9&lt/div&gt
+  &ltdiv class="column-3"&gtcolumn-3&lt/div&gt
+
+  &ltdiv class="column-8"&gtcolumn-8&lt/div&gt
+  &ltdiv class="column-4"&gtcolumn-4&lt/div&gt
+
+  &ltdiv class="column-7"&gtcolumn-7&lt/div&gt
+  &ltdiv class="column-5"&gtcolumn-5&lt/div&gt
+
+  &ltdiv class="column-6"&gtcolumn-6&lt/div&gt
+  &ltdiv class="column-6"&gtcolumn-6&lt/div&gt
+&lt/div&gt
+
+&ltdiv class="row justify-start"&gt
+  &ltdiv class="column-3"&gtjustify-start&lt/div&gt
+  &ltdiv class="column-3"&gtcolumn-3&lt/div&gt
+&lt/div&gt
+
+&ltdiv class="row justify-end"&gt
+  &ltdiv class="column-3"&gtjustify-end&lt/div&gt
+  &ltdiv class="column-3"&gtcolumn-3&lt/div&gt
+&lt/div&gt
+
+&ltdiv class="row justify-between"&gt
+  &ltdiv class="column-3"&gtjustify-between&lt/div&gt
+  &ltdiv class="column-3"&gtcolumn-3&lt/div&gt
+&lt/div&gt
+
+&ltdiv class="row justify-around"&gt
+  &ltdiv class="column-3"&gtjustify-around&lt/div&gt
+  &ltdiv class="column-3"&gtcolumn-3&lt/div&gt
+&lt/div&gt
+
+&ltdiv class="row justify-center"&gt
+  &ltdiv class="column-3"&gtjustify-center&lt/div&gt
+  &ltdiv class="column-3"&gtcolumn-3&lt/div&gt
+&lt/div&gt
+          </code></pre>
+        </div>
       </section>
 
       <section class="row">
@@ -101,6 +151,17 @@
           <a class="button button-secondary" href="#">Secondary link</a>
           <button class="button-secondary">Secondary button</button>
           <input class="button-secondary" type="submit" value="Secondary submit">
+        </div>
+        <div class="column-12">
+          <pre><code>
+&lta class="button button-primary" href="#"&gtPrimary link&lt/a&gt
+&ltbutton class="button-primary"&gtPrimary button&lt/button&gt
+&ltinput class="button-primary" type="submit" value="Primary submit"&gt
+
+&lta class="button button-secondary" href="#"&gtSecondary link&lt/a&gt
+&ltbutton class="button-secondary"&gtSecondary button&lt/button&gt
+&ltinput class="button-secondary" type="submit" value="Secondary submit"&gt
+          </code></pre>
         </div>
       </section>
 
@@ -153,6 +214,59 @@
             </div>
           </form>
         </div>
+        <div class="column-12">
+          <pre><code>
+&ltform action=""&gt
+  &ltdiv class="row"&gt
+    &ltdiv class="column-4"&gt
+      &ltlabel for="email-input"&gtYour email&lt/label&gt
+      &ltinput type="email" id="email-input"&gt
+    &lt/div&gt
+
+    &ltdiv class="column-4"&gt
+      &ltlabel for="password-input"&gtYour password&lt/label&gt
+      &ltinput type="password" id="password-input"&gt
+    &lt/div&gt
+
+    &ltdiv class="column-4"&gt
+      &ltlabel for="password-repeat-input"&gtRepeat password&lt/label&gt
+      &ltinput type="password" id="password-repeat-input"&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltlabel for="country-select-list"&gtCountry&lt/label&gt
+      &ltselect id="country-select-list"&gt
+        &ltoption value="finland"&gtFinland&lt/option&gt
+        &ltoption value="greece"&gtGreece&lt/option&gt
+        &ltoption value="slovakia"&gtSlovakia&lt/option&gt
+      &lt/select&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltlabel for="message-input"&gtMessage&lt/label&gt
+      &lttextarea placeholder="Hi dude !" id="message-input"&gt&lt/textarea&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltfieldset&gt
+        &ltlabel for="dog-input"&gt
+          &ltinput type="checkbox" id="dog-input"&gt
+          I like dogs
+        &lt/label&gt
+        &ltlabel for="cat-input"&gt
+          &ltinput type="checkbox" id="cat-input" disabled&gt
+          I like cats
+        &lt/label&gt
+      &lt/fieldset&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltinput class="button-primary" type="submit" value="Submit"&gt
+    &lt/div&gt
+  &lt/div&gt
+&lt/form&gt
+          </code></pre>
+        </div>
       </section>
 
       <section class="row">
@@ -187,6 +301,26 @@
             </tbody>
           </table>
         </div>
+        <div class="column-12">
+          <pre><code>
+&lttable&gt
+  &ltthead&gt
+    &lttr&gt
+      &ltth&gtTeam&lt/th&gt
+      &ltth&gtPoints&lt/th&gt
+      &ltth&gtRank&lt/th&gt
+    &lt/tr&gt
+  &lt/thead&gt
+  &lttbody&gt
+    &lttr&gt
+      &lttd&gtGF38&lt/td&gt
+      &lttd&gt22&lt/td&gt
+      &lttd&gt#1&lt/td&gt
+    &lt/tr&gt
+  &lt/tbody&gt
+&lt/table&gt
+          </code></pre>
+        </div>
       </section>
 
       <section class="row">
@@ -205,6 +339,21 @@
             </li>
             <li>Item 3</li>
           </ul>
+        </div>
+        <div class="column-12">
+          <pre><code>
+&ltul class="list"&gt
+  &ltli&gtItem 1&lt/li&gt
+  &ltli&gt
+    Item 2
+    &ltul class="list"&gt
+      &ltli&gtItem 2.1&lt/li&gt
+      &ltli&gtItem 2.2&lt/li&gt
+    &lt/ul&gt
+  &lt/li&gt
+  &ltli&gtItem 3&lt/li&gt
+&lt/ul&gt
+          </code></pre>
         </div>
       </section>
 
@@ -255,18 +404,20 @@
           </article>
         </div>
         <div class="column-12">
-          <article class="card">
-            <img src="https://via.placeholder.com/150/150" alt="placeholder">
-            <h1 class="card-title">
-              Title
-            </h1>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet
-            </p>
-            <div class="card-actions">
-              <a class="button button-primary" href="#">link</a>
-            </div>
-          </article>
+          <pre><code>
+&ltarticle class="card"&gt
+  &ltimg src="https://via.placeholder.com/150/150" alt="placeholder"&gt
+  &lth1 class="card-title"&gt
+    Title
+  &lt/h1&gt
+  &ltp class="card-text"&gt
+    Lorem ipsum dolor sit amet
+  &lt/p&gt
+  &ltdiv class="card-actions"&gt
+    &lta class="button button-primary" href="#"&gtlink&lt/a&gt
+  &lt/div&gt
+&lt/article&gt
+          </code></pre>
         </div>
       </section>
     </div>
