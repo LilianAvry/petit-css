@@ -286,7 +286,7 @@ div[class^="column"] {
     width: 8.33333332%;
 }
 
-@media (min-width: 750px) {
+@media (max-width: 750px) {
     .container {width: 96%;}
     .container .row .column {
         flex-basis: 100%;

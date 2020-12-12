@@ -1,4 +1,6 @@
+.npmignore
 index.js
+index.html
 src/button
 src/card
 src/code
