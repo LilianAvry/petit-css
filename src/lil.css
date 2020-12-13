@@ -328,6 +328,14 @@ https://codepen.io/mutedblues/pen/MmPNPG
     z-index: 3;
 }
 .navigation a {color: #FFF;}
+.navigation .logo {
+    display: block;
+    float: left;
+    font-size: 1.8em;
+    font-weight: lighter;
+    padding: 10px 20px;
+    text-decoration: none;
+}
 .navigation ul {
     margin: 0;
     padding: 0;
@@ -335,55 +343,24 @@ https://codepen.io/mutedblues/pen/MmPNPG
     overflow: hidden;
     background-color: #333;
 }
+.navigation li {float: left;}
 .navigation li a {
     display: block;
-    padding: 20px 20px;
+    padding: 12px;
+    margin: 6px;
+    border-radius: 2px;
     text-decoration: none;
 }
 .navigation li a:hover,
 .navigation .menu-button:hover {
     background-color: #555;
 }
-.navigation .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-}
 .navigation .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-}
-.navigation .menu-icon {
-    cursor: pointer;
-    display: inline-block;
+    clear: none;
     float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
+    max-height: none;
 }
-.navigation .menu-icon .icon {
-    background: #FFF;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-}
-.navigation .menu-icon .icon:before,
-.navigation .menu-icon .icon:after {
-    background: #FFF;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-.navigation .menu-icon .icon:before {top: 5px;}
-.navigation .menu-icon .icon:after {top: -5px;}
+.navigation .menu-icon {display: none;}
 .navigation .menu-button {display: none;}
 .navigation .menu-button:checked ~ .menu {max-height: 500px;}
 .navigation .menu-button:checked ~ .menu-icon .icon {background: transparent;}
@@ -394,15 +371,45 @@ https://codepen.io/mutedblues/pen/MmPNPG
     top: 0;
 }
 
-@media (min-width: 750px) {
-    .navigation li {float: left;}
-    .navigation li a {padding: 20px 30px;}
-    .navigation .menu {
-        clear: none;
-        float: right;
-        max-height: none;
+@media (max-width: 750px) {
+    .navigation li {float: inherit;}
+    .navigation li a {
+        padding: 14px 14px;
     }
-    .navigation .menu-icon {display: none;}
+    .navigation .menu {
+        clear: both;
+        float: inherit;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    .navigation .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+    .navigation .menu-icon .icon {
+        background: #FFF;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+    .navigation .menu-icon .icon:before,
+    .navigation .menu-icon .icon:after {
+        background: #FFF;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+    .navigation .menu-icon .icon:before {top: 5px;}
+    .navigation .menu-icon .icon:after {top: -5px;}
 }
 
 /* Table -------------------------------- */
