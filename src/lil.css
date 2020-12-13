@@ -331,8 +331,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 .navigation .logo {
     display: block;
     float: left;
-    font-size: 1.8em;
-    font-weight: lighter;
+    font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
 }
@@ -346,9 +345,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 .navigation li {float: left;}
 .navigation li a {
     display: block;
-    padding: 12px;
-    margin: 6px;
-    border-radius: 2px;
+    padding: 18px 20px;
     text-decoration: none;
 }
 .navigation li a:hover,
@@ -373,9 +370,6 @@ https://codepen.io/mutedblues/pen/MmPNPG
 
 @media (max-width: 750px) {
     .navigation li {float: inherit;}
-    .navigation li a {
-        padding: 14px 14px;
-    }
     .navigation .menu {
         clear: both;
         float: inherit;
@@ -387,6 +381,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
         display: inline-block;
         float: right;
         padding: 28px 20px;
+        margin: 0;
         position: relative;
         user-select: none;
     }
