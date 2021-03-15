@@ -84,8 +84,8 @@ div[class^="column"] {
 }
 
 @media (max-width: 750px) {
-    .container {width: 96%;}
-    .container .row .column {
+    .container {width: 100%;}
+    .container .row div[class^="column"] {
         flex-basis: 100%;
         width: 100%;
     }
