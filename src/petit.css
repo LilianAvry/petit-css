@@ -340,9 +340,11 @@ https://codepen.io/mutedblues/pen/MmPNPG
     padding: 0;
     list-style: none;
     overflow: hidden;
+}
+.navigation li {
+    float: left;
     background-color: #333;
 }
-.navigation li {float: left;}
 .navigation li a {
     display: block;
     padding: 18px 20px;
