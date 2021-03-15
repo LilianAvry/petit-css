@@ -21,9 +21,11 @@ https://codepen.io/mutedblues/pen/MmPNPG
     padding: 0;
     list-style: none;
     overflow: hidden;
+}
+.navigation li {
+    float: left;
     background-color: #333;
 }
-.navigation li {float: left;}
 .navigation li a {
     display: block;
     padding: 18px 20px;
@@ -40,7 +42,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation .menu-icon {display: none;}
 .navigation .menu-button {display: none;}
-.navigation .menu-button:checked ~ .menu {max-height: 500px;}
+.navigation .menu-button:checked ~ .menu {max-height: 100%;}
 .navigation .menu-button:checked ~ .menu-icon .icon {background: transparent;}
 .navigation .menu-button:checked ~ .menu-icon .icon:before {transform: rotate(-45deg);}
 .navigation .menu-button:checked ~ .menu-icon .icon:after {transform: rotate(45deg);}

@@ -1,7 +1,7 @@
 const fs = require('fs');
-const lilPath = `${__dirname}/src/lil.css`;
+const petitPath = `${__dirname}/src/petit.css`;
 
-fs.writeFileSync(lilPath, '');
+fs.writeFileSync(petitPath, '');
 
 function read (name, index) {
   const path = `${__dirname}/src/${name.toLowerCase()}/style.css`;
@@ -11,7 +11,7 @@ function read (name, index) {
     ? `/* ${name} -------------------------------- */\r\n`
     : `\r\n/* ${name} -------------------------------- */\r\n`;
   const data = comment + content;
-  fs.appendFileSync(lilPath, data);
+  fs.appendFileSync(petitPath, data);
 }
 
 const components = ['Button', 'Card', 'Code', 'Form', 'Grid', 'List', 'Navigation', 'Table', 'Typography'];
