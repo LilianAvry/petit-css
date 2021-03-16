@@ -1,10 +1,9 @@
 {
-  "name": "lil-css",
-  "version": "0.0.1",
+  "name": "petit-css",
+  "version": "1.0.0-beta.0",
   "description": "A small stylesheet",
-  "main": "index.js",
+  "main": "index.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node index.js"
   },
   "repository": {
@@ -13,12 +12,14 @@
   },
   "keywords": [
     "small",
-    "light",
     "lite",
+    "light",
+    "lightweight",
     "css",
     "style",
     "sheet",
-    "stylesheet"
+    "stylesheet",
+    "framework"
   ],
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
