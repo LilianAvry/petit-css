@@ -1,6 +1,6 @@
 {
   "name": "petit-css",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "A small stylesheet",
   "main": "index.css",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LilianAvry/lil-css.git"
+    "url": "git+https://github.com/LilianAvry/petit-css.git"
   },
   "keywords": [
     "small",
@@ -24,7 +24,7 @@
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LilianAvry/lil-css/issues"
+    "url": "https://github.com/LilianAvry/petit-css/issues"
   },
-  "homepage": "https://github.com/LilianAvry/lil-css#readme"
+  "homepage": "http://petitcss.lil.re"
 }
