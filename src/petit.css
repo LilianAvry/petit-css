@@ -96,17 +96,19 @@ input[type="button"].button-primary:focus {
 }
 .card .card-title {
     margin: 0;
-    padding: 1rem;
-    font-size: 1.8rem;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 .card .card-text {
     margin: 0;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     font-weight: lighter;
 }
 .card .card-actions {
     margin: 0;
     padding: 1rem;
+    margin-top: 1rem;
     text-align: right;
     background-color: #EEE;
 }
@@ -441,6 +443,7 @@ h5, h6, p, b, i, u, span, mark, strong, b, u, i, li, th, td, .link {
     line-height: 1.4rem;
 }
 p, b, i, u, span, mark, u, i, li, td, .link {font-weight: lighter;}
+h1, h2, h3, h4, h5, h6, strong { font-weight: 500; }
 h1 {font-size: 2rem;}
 h2 {font-size: 1.5rem;}
 h3 {font-size: 1.2rem;}
