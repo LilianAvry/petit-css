@@ -3,6 +3,7 @@ Based on Skeleton
 http://getskeleton.com/
 */
 table {
+    width: 100%;
     background-color: #FFF;
     border-collapse: collapse;
     border-radius: 2px;
@@ -15,7 +16,6 @@ thead {background-color: #EEE}
 
 th,
 td {
-    width: 100%;
     padding: .6rem 1rem;
     text-align: left;
     border-bottom: 1px solid #DDD;
