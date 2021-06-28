@@ -1,6 +1,6 @@
 {
   "name": "petit-css",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "A small stylesheet",
   "main": "index.css",
   "scripts": {
