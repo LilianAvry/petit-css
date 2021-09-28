@@ -13,7 +13,7 @@ input[type="button"] {
     padding: 0 30px;
     text-align: center;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 38px;
     letter-spacing: .05rem;
     text-transform: uppercase;
@@ -32,9 +32,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: #333;
-    background-color: #EEE;
-    border-color: #EEE;
+    color: #1A8CFF;
+    background-color: #B3E5FC;
+    border-color: #B3E5FC;
 }
 
 a.button-secondary:hover,
@@ -47,8 +47,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: #DDD;
-    border-color: #DDD;
+    background-color: #CEEEFD;
+    border-color: #CEEEFD;
 }
 
 a.button-primary,
@@ -57,8 +57,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #555;
-    border-color: #555;
+    background-color: #1A8CFF;
+    border-color: #1A8CFF;
 }
 
 a.button-primary:hover,
@@ -71,8 +71,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: #333;
-    border-color: #333;
+    background-color: #4DA6FF;
+    border-color: #4DA6FF;
 }
 
 /* Card -------------------------------- */
@@ -324,7 +324,7 @@ Based on Mutedblues' menu
 https://codepen.io/mutedblues/pen/MmPNPG
 */
 .navigation {
-    background-color: #333;
+    background-color: #1A8CFF;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -345,16 +345,18 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li {
     float: left;
-    background-color: #333;
+    background-color: #1A8CFF;
 }
 .navigation li a {
     display: block;
-    padding: 18px 20px;
+    padding: 18px 16px;
+    font-weight: 500;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .navigation li a:hover,
 .navigation .menu-button:hover {
-    background-color: #555;
+    background-color: #4DA6FF;
 }
 .navigation .menu {
     clear: none;
