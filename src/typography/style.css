@@ -17,10 +17,9 @@ mark {
 }
 .link {
     text-decoration: none;
-    color: #6BA4FF;
-    transition: 0.2s;
+    color: #4DA6FF;
 }
-.link:hover {color: #407AD6;}
+.link:hover {color: #1A8CFF;}
 .text-justify {text-align: justify;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
