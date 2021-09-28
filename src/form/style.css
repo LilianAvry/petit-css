@@ -43,7 +43,7 @@ input[type="url"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 select:hover {
-    border-color: var(--blue-3);
+    border-color: var(--primary-3);
 }
 
 input[type="email"]:focus,
@@ -55,7 +55,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border-color: var(--blue-4);
+    border-color: var(--primary-4);
     outline: 0;
 }
 label,
