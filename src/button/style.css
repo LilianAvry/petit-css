@@ -12,7 +12,7 @@ input[type="button"] {
     padding: 0 30px;
     text-align: center;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 38px;
     letter-spacing: .05rem;
     text-transform: uppercase;
@@ -31,9 +31,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: #333;
-    background-color: #EEE;
-    border-color: #EEE;
+    color: #04A9FB;
+    background-color: #B3E5FC;
+    border-color: #B3E5FC;
 }
 
 a.button-secondary:hover,
@@ -46,8 +46,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: #DDD;
-    border-color: #DDD;
+    background-color: #CEEEFD;
+    border-color: #CEEEFD;
 }
 
 a.button-primary,
@@ -56,8 +56,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #555;
-    border-color: #555;
+    background-color: #04A9FB;
+    border-color: #04A9FB;
 }
 
 a.button-primary:hover,
@@ -70,6 +70,6 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: #333;
-    border-color: #333;
+    background-color: #36BAFC;
+    border-color: #36BAFC;
 }
