@@ -1,3 +1,14 @@
+/* Colors -------------------------------- */
+* {
+    --black: #1a1a1a;
+    --grey: #BBB;
+    --primary-1: #CEEEFD;
+    --primary-2: #AFE2FA;
+    --primary-3: #4DA6FF;
+    --primary-4: #1A8CFF;
+    --primary-5: #0073E6;
+}
+
 /* Button -------------------------------- */
 /*
 Based on Skeleton
@@ -32,9 +43,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: #1A8CFF;
-    background-color: #CEEEFD;
-    border-color: #CEEEFD;
+    color: var(--primary-4);
+    background-color: var(--primary-1);
+    border-color: var(--primary-1);
 }
 
 a.button-secondary:hover,
@@ -47,8 +58,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: #AFE2FA;
-    border-color: #AFE2FA;
+    background-color: var(--primary-2);
+    border-color: var(--primary-2);
 }
 
 a.button-primary,
@@ -57,8 +68,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #1A8CFF;
-    border-color: #1A8CFF;
+    background-color: var(--primary-4);
+    border-color: var(--primary-4);
 }
 
 a.button-primary:hover,
@@ -71,8 +82,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: #0073E6;
-    border-color: #0073E6;
+    background-color: var(--primary-5);
+    border-color: var(--primary-5);
 }
 
 /* Card -------------------------------- */
@@ -179,7 +190,7 @@ input[type="url"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 select:hover {
-    border-color: #4DA6FF;
+    border-color: var(--primary-3);
 }
 
 input[type="email"]:focus,
@@ -191,7 +202,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border-color: #1A8CFF;
+    border-color: var(--primary-4);
     outline: 0;
 }
 label,
@@ -327,7 +338,7 @@ Based on Mutedblues' menu
 https://codepen.io/mutedblues/pen/MmPNPG
 */
 .navigation {
-    background-color: #1A8CFF;
+    background-color: var(--primary-4);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -348,7 +359,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li {
     float: left;
-    background-color: #1A8CFF;
+    background-color: var(--primary-4);
 }
 .navigation li a {
     display: block;
@@ -359,7 +370,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li a:hover,
 .navigation .menu-button:hover {
-    background-color: #4DA6FF;
+    background-color: var(--primary-3);
 }
 .navigation .menu {
     clear: none;
