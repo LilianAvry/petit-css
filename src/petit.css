@@ -33,8 +33,8 @@ input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
     color: #1A8CFF;
-    background-color: #B3E5FC;
-    border-color: #B3E5FC;
+    background-color: #CEEEFD;
+    border-color: #CEEEFD;
 }
 
 a.button-secondary:hover,
@@ -47,8 +47,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: #CEEEFD;
-    border-color: #CEEEFD;
+    background-color: #AFE2FA;
+    border-color: #AFE2FA;
 }
 
 a.button-primary,
@@ -71,8 +71,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: #4DA6FF;
-    border-color: #4DA6FF;
+    background-color: #0073E6;
+    border-color: #0073E6;
 }
 
 /* Card -------------------------------- */
