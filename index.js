@@ -7,6 +7,8 @@ function read (name, index) {
   const path = `${__dirname}/src/${name.toLowerCase()}/style.css`;
   const options = { encoding:'utf8', flag:'r' };
   const content = fs.readFileSync(path, options);
+  // console.log(content.split('\n')[0])
+
   const comment = index === 0
     ? `/* ${name} -------------------------------- */\r\n`
     : `\r\n/* ${name} -------------------------------- */\r\n`;

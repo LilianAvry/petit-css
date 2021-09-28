@@ -1,9 +1,10 @@
+@import "../colors/style.css";
 /*
 Based on Mutedblues' menu
 https://codepen.io/mutedblues/pen/MmPNPG
 */
 .navigation {
-    background-color: #1A8CFF;
+    background-color: var(--blue-4);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -24,7 +25,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li {
     float: left;
-    background-color: #1A8CFF;
+    background-color: var(--blue-4);
 }
 .navigation li a {
     display: block;
@@ -35,7 +36,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li a:hover,
 .navigation .menu-button:hover {
-    background-color: #4DA6FF;
+    background-color: var(--blue-3);
 }
 .navigation .menu {
     clear: none;

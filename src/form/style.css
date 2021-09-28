@@ -1,3 +1,4 @@
+@import "../colors/style.css";
 /*
 Based on Skeleton
 http://getskeleton.com/
@@ -42,7 +43,7 @@ input[type="url"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 select:hover {
-    border-color: #4DA6FF;
+    border-color: var(--blue-3);
 }
 
 input[type="email"]:focus,
@@ -54,7 +55,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-    border-color: #1A8CFF;
+    border-color: var(--blue-4);
     outline: 0;
 }
 label,

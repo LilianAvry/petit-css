@@ -1,3 +1,4 @@
+@import "../colors/style.css";
 /*
 Based on Skeleton
 http://getskeleton.com/
@@ -31,9 +32,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: #1A8CFF;
-    background-color: #CEEEFD;
-    border-color: #CEEEFD;
+    color: var(--blue-4);
+    background-color: var(--blue-1);
+    border-color: var(--blue-1);
 }
 
 a.button-secondary:hover,
@@ -46,8 +47,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: #AFE2FA;
-    border-color: #AFE2FA;
+    background-color: var(--blue-2);
+    border-color: var(--blue-2);
 }
 
 a.button-primary,
@@ -56,8 +57,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #1A8CFF;
-    border-color: #1A8CFF;
+    background-color: var(--blue-4);
+    border-color: var(--blue-4);
 }
 
 a.button-primary:hover,
@@ -70,6 +71,6 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: #0073E6;
-    border-color: #0073E6;
+    background-color: var(--blue-5);
+    border-color: var(--blue-5);
 }
