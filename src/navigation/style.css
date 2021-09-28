@@ -3,7 +3,7 @@ Based on Mutedblues' menu
 https://codepen.io/mutedblues/pen/MmPNPG
 */
 .navigation {
-    background-color: #333;
+    background-color: #1A8CFF;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -24,7 +24,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li {
     float: left;
-    background-color: #333;
+    background-color: #1A8CFF;
 }
 .navigation li a {
     display: block;
@@ -33,7 +33,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li a:hover,
 .navigation .menu-button:hover {
-    background-color: #555;
+    background-color: #4DA6FF;
 }
 .navigation .menu {
     clear: none;

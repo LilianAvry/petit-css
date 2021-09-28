@@ -31,7 +31,7 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: #04A9FB;
+    color: #1A8CFF;
     background-color: #B3E5FC;
     border-color: #B3E5FC;
 }
@@ -56,8 +56,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: #04A9FB;
-    border-color: #04A9FB;
+    background-color: #1A8CFF;
+    border-color: #1A8CFF;
 }
 
 a.button-primary:hover,
@@ -70,6 +70,6 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: #36BAFC;
-    border-color: #36BAFC;
+    background-color: #4DA6FF;
+    border-color: #4DA6FF;
 }
