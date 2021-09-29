@@ -4,7 +4,7 @@ Based on Mutedblues' menu
 https://codepen.io/mutedblues/pen/MmPNPG
 */
 .navigation {
-    background-color: var(--primary-4);
+    background-color: var(--primary);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -25,7 +25,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li {
     float: left;
-    background-color: var(--primary-4);
+    background-color: var(--primary);
 }
 .navigation li a {
     display: block;
@@ -36,7 +36,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 .navigation li a:hover,
 .navigation .menu-button:hover {
-    background-color: var(--primary-3);
+    background-color: var(--primary-lighter);
 }
 .navigation .menu {
     clear: none;

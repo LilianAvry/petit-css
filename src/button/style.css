@@ -32,9 +32,9 @@ button.button-secondary,
 input[type="submit"].button-secondary,
 input[type="reset"].button-secondary,
 input[type="button"].button-secondary {
-    color: var(--primary-4);
-    background-color: var(--primary-1);
-    border-color: var(--primary-1);
+    color: var(--primary);
+    background-color: var(--accent);
+    border-color: var(--accent);
 }
 
 a.button-secondary:hover,
@@ -47,8 +47,8 @@ button.button-secondary:focus,
 input[type="submit"].button-secondary:focus,
 input[type="reset"].button-secondary:focus,
 input[type="button"].button-secondary:focus {
-    background-color: var(--primary-2);
-    border-color: var(--primary-2);
+    background-color: var(--accent-darker);
+    border-color: var(--accent-darker);
 }
 
 a.button-primary,
@@ -57,8 +57,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
     color: #FFF;
-    background-color: var(--primary-4);
-    border-color: var(--primary-4);
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
 
 a.button-primary:hover,
@@ -71,6 +71,6 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: var(--primary-5);
-    border-color: var(--primary-5);
+    background-color: var(--primary-darker);
+    border-color: var(--primary-darker);
 }

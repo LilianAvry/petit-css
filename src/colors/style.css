@@ -1,9 +1,11 @@
 * {
     --black: #1a1a1a;
-    --grey: #BBB;
-    --primary-1: #E3F2FD;
-    --primary-2: #CFE9FC;
-    --primary-3: #42A5F5;
-    --primary-4: #2196F3;
-    --primary-5: #1E88E5;
+    --grey: #DDD;
+    --grey-darker: #BBB;
+    --grey-lighter: #EEE;
+    --accent: #E3F2FD;
+    --accent-darker: #CFE9FC;
+    --primary: #2196F3;
+    --primary-darker: #1E88E5;
+    --primary-lighter: #42A5F5;
 }
