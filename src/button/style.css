@@ -74,3 +74,11 @@ input[type="button"].button-primary:focus {
     background-color: var(--primary-darker);
     border-color: var(--primary-darker);
 }
+
+input[type="button"]:disabled,
+input[type="button"]:disabled:hover,
+input[type="button"]:disabled:focus {
+    color: var(--grey-darker);
+    background-color: var(--grey-lighter);
+    border-color: var(--grey-lighter);
+}
