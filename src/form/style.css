@@ -27,7 +27,7 @@ select {
     height: 38px;
     padding: .6rem;
     background-color: #FFF;
-    border: 1px solid #CCC;
+    border: 1px solid var(--grey);
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;

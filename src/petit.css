@@ -1,9 +1,9 @@
 /* Colors -------------------------------- */
 * {
     --black: #1a1a1a;
-    --grey: #DDD;
+    --grey: #CCC;
     --grey-darker: #BBB;
-    --grey-lighter: #EEE;
+    --grey-lighter: #DDD;
     --accent: #E3F2FD;
     --accent-darker: #CFE9FC;
     --primary: #2196F3;
@@ -176,7 +176,7 @@ select {
     height: 38px;
     padding: .6rem;
     background-color: #FFF;
-    border: 1px solid #CCC;
+    border: 1px solid var(--grey);
     border-radius: 2px;
     box-shadow: none;
     box-sizing: border-box;
