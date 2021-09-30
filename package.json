@@ -1,14 +1,14 @@
 {
   "name": "petit-css",
-  "version": "1.0.0-beta.6",
-  "description": "A small stylesheet",
+  "version": "1.0.0-beta.7",
+  "description": " A minimalist but complete stylesheet",
   "main": "index.css",
   "scripts": {
     "build": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LilianAvry/petit-css.git"
+    "url": "git+https://github.com/lil-re/petit-css.git"
   },
   "keywords": [
     "small",
@@ -24,7 +24,7 @@
   "author": "Lilian Avry Chrétienne",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LilianAvry/petit-css/issues"
+    "url": "https://github.com/lil-re/petit-css/issues"
   },
   "homepage": "http://petitcss.lil.re"
 }
