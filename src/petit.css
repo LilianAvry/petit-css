@@ -463,6 +463,7 @@ td {
 }
 
 /* Typography -------------------------------- */
+
 h5, h6, p, b, i, u, span, mark, strong, b, u, i, li, th, td, .link {
     font-size: 1rem;
     letter-spacing: 0.02rem;
@@ -477,14 +478,14 @@ h4 {font-size: 1.1rem;}
 small {font-size: .8rem;}
 mark {
     padding: 2px 4px;
-    background-color: #EEE;
+    background-color: var(--grey-lighter);
     border-radius: 2px;
 }
 .link {
     text-decoration: none;
-    color: #4DA6FF;
+    color: var(--primary-lighter);
 }
-.link:hover {color: #1A8CFF;}
+.link:hover {color: var(--primary-darker);}
 .text-justify {text-align: justify;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
