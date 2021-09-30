@@ -69,3 +69,13 @@ fieldset {
     border-width: 0;
 }
 
+input:disabled,
+textarea:disabled,
+select:disabled,
+input:hover:disabled,
+textarea:hover:disabled,
+select:hover:disabled {
+    background-color: var(--grey-lighter);
+    border: 1px solid var(--grey);
+    color: var(--grey-darker)
+}
