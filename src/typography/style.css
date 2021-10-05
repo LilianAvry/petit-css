@@ -1,5 +1,4 @@
 @import "../colors/style.css";
-
 h6, p, b, i, u, span, mark, strong, b, u, i, li, th, td, .link {
     font-size: 1rem;
     letter-spacing: 0.02rem;
@@ -31,3 +30,4 @@ mark {
 .text-capitalize {text-transform: capitalize;}
 .text-uppercase {text-transform: uppercase;}
 .text-lowercase {text-transform: lowercase;}
+.text-primary {color: var(--primary);}
