@@ -1,7 +1,7 @@
 {
   "name": "petit-css",
-  "version": "1.0.0-beta.7",
-  "description": " A minimalist but complete stylesheet",
+  "version": "1.0.0-beta.8",
+  "description": "A minimalist but complete stylesheet",
   "main": "index.css",
   "scripts": {
     "build": "node index.js"
