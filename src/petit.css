@@ -505,3 +505,4 @@ mark {
 .text-uppercase {text-transform: uppercase;}
 .text-lowercase {text-transform: lowercase;}
 .text-primary {color: var(--primary);}
+.borderless {border-width: 0px;}
