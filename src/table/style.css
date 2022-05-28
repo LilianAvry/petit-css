@@ -12,6 +12,8 @@ table {
     overflow: hidden;
 }
 
+table.borderless {box-shadow: none;}
+
 thead {background-color: #EEE}
 
 th,
