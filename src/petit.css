@@ -107,7 +107,6 @@ input[type="button"]:disabled:focus {
 }
 .card img {
     width: 100%;
-    height: 220px;
     margin: 0;
     padding: 0;
     background-position: center;
@@ -117,19 +116,25 @@ input[type="button"]:disabled:focus {
 }
 .card .card-title {
     margin: 0;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1.4rem;
+    font-weight: 500;
+}
+.card .card-subtitle {
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 .card .card-text {
     margin: 0;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: lighter;
 }
 .card .card-actions {
     margin: 0;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: right;
     background-color: #EEE;
 }
@@ -480,7 +485,7 @@ h6, p, b, i, u, span, mark, strong, b, u, i, li, th, td, .link {
 }
 p, b, i, u, span, mark, u, i, li, td, .link {font-weight: lighter;}
 h1, h2 { font-weight: 800; }
-h3, h4, h5, h6, strong { font-weight: 500; }
+h3, h4, h5, h6 { font-weight: 500; }
 h1 {font-size: 2.5rem;}
 h2 {font-size: 2rem;}
 h3 {font-size: 1.5rem;}

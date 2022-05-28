@@ -8,7 +8,6 @@
 }
 .card img {
     width: 100%;
-    height: 220px;
     margin: 0;
     padding: 0;
     background-position: center;
@@ -18,19 +17,25 @@
 }
 .card .card-title {
     margin: 0;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-size: 1.4rem;
+    font-weight: 500;
+}
+.card .card-subtitle {
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 .card .card-text {
     margin: 0;
-    padding: 1rem 1rem 0 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     font-weight: lighter;
 }
 .card .card-actions {
     margin: 0;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: right;
     background-color: #EEE;
 }
