@@ -11,11 +11,8 @@ table {
     box-shadow: 0 0 0 1px #DDD;
     overflow: hidden;
 }
-
 table.borderless {box-shadow: none;}
-
 thead {background-color: #EEE}
-
 th,
 td {
     padding: .6rem 1rem;

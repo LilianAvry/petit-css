@@ -45,7 +45,6 @@ textarea:hover,
 select:hover {
     border-color: var(--primary-lighter);
 }
-
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -68,7 +67,6 @@ fieldset {
     padding: 0;
     border-width: 0;
 }
-
 input:disabled,
 textarea:disabled,
 select:disabled,

@@ -116,28 +116,29 @@ input[type="button"]:disabled:focus {
 }
 .card .card-title {
     margin: 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem;
     font-size: 1.4rem;
     font-weight: 500;
 }
 .card .card-subtitle {
     margin: 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
 .card .card-text {
     margin: 0;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem;
     font-weight: lighter;
 }
 .card .card-actions {
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-top: 0.5rem;
     text-align: right;
-    background-color: #EEE;
+    border-top: 1px solid #DDD;
 }
+.card.borderless .card-actions {border-top: none;}
 
 /* Code -------------------------------- */
 /*
@@ -154,7 +155,6 @@ code {
     border: 1px solid #333;
     border-radius: 2px;
 }
-
 pre > code {
     display: block;
     white-space: pre;
@@ -207,7 +207,6 @@ textarea:hover,
 select:hover {
     border-color: var(--primary-lighter);
 }
-
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -230,7 +229,6 @@ fieldset {
     padding: 0;
     border-width: 0;
 }
-
 input:disabled,
 textarea:disabled,
 select:disabled,
@@ -466,11 +464,8 @@ table {
     box-shadow: 0 0 0 1px #DDD;
     overflow: hidden;
 }
-
 table.borderless {box-shadow: none;}
-
 thead {background-color: #EEE}
-
 th,
 td {
     padding: .6rem 1rem;
