@@ -1,8 +1,5 @@
 @import "../colors/style.css";
-/*
-Based on Skeleton
-http://getskeleton.com/
-*/
+/* Based on Skeleton : http://getskeleton.com/ */
 input[type="email"],
 input[type="number"],
 input[type="search"],

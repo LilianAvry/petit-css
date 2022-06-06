@@ -1,8 +1,5 @@
 @import "../colors/style.css";
-/*
-Based on Mutedblues' menu
-https://codepen.io/mutedblues/pen/MmPNPG
-*/
+/* Based on Mutedblues' menu : https://codepen.io/mutedblues/pen/MmPNPG */
 .navigation {
     background-color: var(--primary);
     position: fixed;

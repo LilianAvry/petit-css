@@ -12,10 +12,7 @@
 }
 
 /* Button -------------------------------- */
-/*
-Based on Skeleton
-http://getskeleton.com/
-*/
+/* Based on Skeleton : http://getskeleton.com/ */
 a[class^="button"],
 button,
 input[type="submit"],
@@ -141,10 +138,7 @@ input[type="button"]:disabled:focus {
 .card.borderless .card-actions {border-top: none;}
 
 /* Code -------------------------------- */
-/*
-Based on Skeleton
-http://getskeleton.com/
-*/
+/* Based on Skeleton : http://getskeleton.com/ */
 code {
     padding: .5rem;
     font-family: monospace;
@@ -161,10 +155,7 @@ pre > code {
 }
 
 /* Form -------------------------------- */
-/*
-Based on Skeleton
-http://getskeleton.com/
-*/
+/* Based on Skeleton : http://getskeleton.com/ */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -334,10 +325,7 @@ div[class^="column"] {
 }
 
 /* List -------------------------------- */
-/*
-Based on Skeleton
-http://getskeleton.com/
-*/
+/* Based on Skeleton : http://getskeleton.com/ */
 .list {
     border: 1px solid #DDD;
     border-radius: 2px;
@@ -356,10 +344,7 @@ http://getskeleton.com/
 .list li:last-of-type { border: none; }
 
 /* Navigation -------------------------------- */
-/*
-Based on Mutedblues' menu
-https://codepen.io/mutedblues/pen/MmPNPG
-*/
+/* Based on Mutedblues' menu : https://codepen.io/mutedblues/pen/MmPNPG */
 .navigation {
     background-color: var(--primary);
     position: fixed;
@@ -451,10 +436,7 @@ https://codepen.io/mutedblues/pen/MmPNPG
 }
 
 /* Table -------------------------------- */
-/*
-Based on Skeleton
-http://getskeleton.com/
-*/
+/* Based on Skeleton : http://getskeleton.com/ */
 table {
     width: 100%;
     background-color: #FFF;
