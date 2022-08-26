@@ -137,23 +137,6 @@ input[type="button"]:disabled:focus {
 }
 .card.borderless .card-actions {border-top: none;}
 
-/* Code -------------------------------- */
-/* Based on Skeleton : http://getskeleton.com/ */
-code {
-    padding: .5rem;
-    font-family: monospace;
-    font-size: .9rem;
-    white-space: nowrap;
-    color: #F0F0F0;
-    background-color: #333;
-    border: 1px solid #333;
-    border-radius: 2px;
-}
-pre > code {
-    display: block;
-    white-space: pre;
-}
-
 /* Form -------------------------------- */
 /* Based on Skeleton : http://getskeleton.com/ */
 input[type="email"],

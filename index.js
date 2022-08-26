@@ -3,7 +3,7 @@ const fs = require('fs');
 class Build {
   petitPath = `${__dirname}/src/petit.css`
   options = { encoding:'utf8', flag:'r' }
-  components = ['Colors', 'Button', 'Card', 'Code', 'Form', 'Grid', 'List', 'Navigation', 'Table', 'Typography']
+  components = ['Colors', 'Button', 'Card', 'Form', 'Grid', 'List', 'Navigation', 'Table', 'Typography']
 
   static main () {
     const builder = new Build()
