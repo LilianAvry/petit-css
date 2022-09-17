@@ -228,6 +228,9 @@ select:hover:disabled {
     align-items: flex-start;
     align-content: flex-start;
 }
+.row.flex-row-reverse {flex-direction: row-reverse}
+.row.flex-column {flex-direction: column}
+.row.flex-column-reverse {flex-direction: column-reverse}
 .row.justify-start {justify-content: flex-start;}
 .row.justify-end {justify-content: flex-end;}
 .row.justify-center {justify-content: center;}
@@ -299,8 +302,11 @@ div[class^="column"] {
     width: 8.33333332%;
 }
 
-@media (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 960px) {
     .container {width: 100%;}
+}
+
+@media (max-width: 600px) {
     .container .row div[class^="column"] {
         flex-basis: 100%;
         width: 100%;
