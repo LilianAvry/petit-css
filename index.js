@@ -1,60 +1,41 @@
 const fs = require('fs');
+const fse = require('fs-extra');
+const ejs = require('ejs')
 
-class Build {
-  petitPath = `${__dirname}/src/petit.css`
-  options = { encoding:'utf8', flag:'r' }
-  components = ['Colors', 'Button', 'Card', 'Form', 'Grid', 'List', 'Navigation', 'Table', 'Typography']
-
-  static main () {
-    const builder = new Build()
-    builder.openTargetFile().readComponents()
+class WebsiteBuilder {
+  buildWebsite () {
+    // Render a set of data
+    ejs.renderFile('./src/index.ejs', (error, data) => {
+      // Write file
+      fs.writeFile('./docs/index.html', data, (error) => {
+        if (error === null) {
+          console.log('Built successfully')
+        } else {
+          throw error
+        }
+      })
+    })
   }
 
-  openTargetFile () {
-    fs.writeFileSync(this.petitPath, '');
-    return this
+  copyAssets () {
+    const srcDir = './src/assets'
+    const destDir = './docs/assets'
+    fse.copySync(srcDir, destDir, { overwrite: true }, (error) => {
+      if (error) {
+        throw error
+      }
+    });
   }
 
-  readComponents () {
-    for (let i = 0; i < this.components.length; i++) {
-      this.readComponent(this.components[i], i)
+  main () {
+    try {
+      this.buildWebsite()
+      this.copyAssets()
+    } catch (error) {
+      console.log(error)
     }
-  }
-
-  readComponent (name, index) {
-    const filePath = this.getFilePath(name)
-    const fileContent = this.getFileContent(filePath)
-    const formattedContent = this.getFormattedContent(fileContent)
-    const fileComment = this.getFileComment(name, index)
-    this.setTarget(fileComment, formattedContent)
-  }
-
-  getFilePath (name) {
-    return `${__dirname}/src/${name.toLowerCase()}/style.css`;
-  }
-
-  getFileContent (path) {
-    return fs.readFileSync(path, this.options);
-  }
-
-  getFormattedContent (content) {
-    return content
-      .split('\n')
-      .filter(line => !line.includes('@import'))
-      .join('\n')
-  }
-
-  getFileComment (name, index) {
-    return index === 0
-      ? `/* ${name} -------------------------------- */\r\n`
-      : `\r\n/* ${name} -------------------------------- */\r\n`;
-  }
-
-  setTarget (comment, finalContent) {
-    const data = comment + finalContent;
-    fs.appendFileSync(this.petitPath, data);
   }
 }
 
-Build.main()
-
+const websiteBuilder = new WebsiteBuilder()
+websiteBuilder.main()

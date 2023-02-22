@@ -1,0 +1,56 @@
+<section id="list" class="row">
+    <div class="column-12">
+        <h2>Lists</h2>
+        <p>
+            Petit.css list do not follow the default html list styles. It is made to give an alternative list style in comparison to other css boilerplates.
+        </p>
+        <p>
+            Default lists have borders, but you can add the <mark>borderless</mark> css class to remove borders.
+        </p>
+    </div>
+    <div class="column-6">
+        <ul class="list">
+            <li>Item 1</li>
+            <li>
+                Item 2
+                <ul class="list">
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="column-6">
+        <ul class="list borderless">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltul class="list"&gt
+  &ltli&gtItem 1&lt/li&gt
+  &ltli&gt
+    Item 2
+    &ltul class="list"&gt
+      &ltli&gtItem 2.1&lt/li&gt
+      &ltli&gtItem 2.2&lt/li&gt
+    &lt/ul&gt
+  &lt/li&gt
+  &ltli&gtItem 3&lt/li&gt
+&lt/ul&gt
+
+&ltul class="list borderless"&gt
+  &ltli&gtItem 1&lt/li&gt
+  &ltli&gtItem 2&lt/li&gt
+  &ltli&gtItem 3&lt/li&gt
+  &ltli&gtItem 4&lt/li&gt
+  &ltli&gtItem 5&lt/li&gt
+&lt/ul&gt
+          </code></pre>
+    </div>
+</section>

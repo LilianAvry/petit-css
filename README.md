@@ -1,6 +1,6 @@
-# Petit CSS
+# Petit CSS documentation
 
-A small stylesheet with less than 500 lines including :
+[Petit CSS](https://github.com/lil-re/petit-css) is a small stylesheet with less than 500 lines including :
  - Flex box grid
  - Navigation menu
  - Buttons

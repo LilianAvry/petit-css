@@ -1,0 +1,110 @@
+<section id="form" class="row">
+    <div class="column-12">
+        <h2>Form</h2>
+        <p>
+            Nothing special here. Form inputs styles are sober and warrant you to get nice forms across all browsers.
+        </p>
+    </div>
+    <div class="column-12">
+        <form action="">
+            <div class="row">
+                <div class="column-4">
+                    <label for="email-input">Your email</label>
+                    <input type="email" id="email-input">
+                </div>
+                <div class="column-4">
+                    <label for="password-input">Your password</label>
+                    <input type="password" id="password-input">
+                </div>
+                <div class="column-4">
+                    <label for="password-repeat-input">Repeat password</label>
+                    <input type="password" id="password-repeat-input">
+                </div>
+                <div class="column-12">
+                    <label for="disabled-input">Disabled input</label>
+                    <input type="password" id="disabled-input" placeholder="Disabled input :-(" disabled>
+                </div>
+                <div class="column-12">
+                    <label for="country-select-list">Country</label>
+                    <select id="country-select-list">
+                        <option value="finland">Finland</option>
+                        <option value="greece">Greece</option>
+                        <option value="slovakia">Slovakia</option>
+                    </select>
+                </div>
+                <div class="column-12">
+                    <label for="message-input">Message</label>
+                    <textarea placeholder="Hi dude !" id="message-input"></textarea>
+                </div>
+                <div class="column-12">
+                    <fieldset>
+                        <label for="dog-input">
+                            <input type="checkbox" id="dog-input">
+                            I like dogs
+                        </label>
+                        <label for="cat-input">
+                            <input type="checkbox" id="cat-input" disabled>
+                            I like cats
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="column-12">
+                    <input class="button-primary" type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="column-12">
+          <pre><code>
+&ltform action=""&gt
+  &ltdiv class="row"&gt
+    &ltdiv class="column-4"&gt
+      &ltlabel for="email-input"&gtYour email&lt/label&gt
+      &ltinput type="email" id="email-input"&gt
+    &lt/div&gt
+
+    &ltdiv class="column-4"&gt
+      &ltlabel for="password-input"&gtYour password&lt/label&gt
+      &ltinput type="password" id="password-input"&gt
+    &lt/div&gt
+
+    &ltdiv class="column-4"&gt
+      &ltlabel for="password-repeat-input"&gtRepeat password&lt/label&gt
+      &ltinput type="password" id="password-repeat-input"&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltlabel for="country-select-list"&gtCountry&lt/label&gt
+      &ltselect id="country-select-list"&gt
+        &ltoption value="finland"&gtFinland&lt/option&gt
+        &ltoption value="greece"&gtGreece&lt/option&gt
+        &ltoption value="slovakia"&gtSlovakia&lt/option&gt
+      &lt/select&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltlabel for="message-input"&gtMessage&lt/label&gt
+      &lttextarea placeholder="Hi dude !" id="message-input"&gt&lt/textarea&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltfieldset&gt
+        &ltlabel for="dog-input"&gt
+          &ltinput type="checkbox" id="dog-input"&gt
+          I like dogs
+        &lt/label&gt
+        &ltlabel for="cat-input"&gt
+          &ltinput type="checkbox" id="cat-input" disabled&gt
+          I like cats
+        &lt/label&gt
+      &lt/fieldset&gt
+    &lt/div&gt
+
+    &ltdiv class="column-12"&gt
+      &ltinput class="button-primary" type="submit" value="Submit"&gt
+    &lt/div&gt
+  &lt/div&gt
+&lt/form&gt
+          </code></pre>
+    </div>
+</section>

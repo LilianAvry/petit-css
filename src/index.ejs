@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Petit CSS, a minimalist and lightweight CSS boilerplate." />
+    <meta name="google-site-verification" content="_jxoy1waJ6vskl4ygVWulhS62yr8qhNMP43UWrUxi1c" />
+
+    <title>Petit CSS</title>
+
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/petit.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+    <body>
+        <%- include('layout/menu'); %>
+
+        <div class="container">
+            <%- include('layout/intro'); %>
+            <%- include('components/typography'); %>
+            <%- include('components/grid'); %>
+            <%- include('components/buttons'); %>
+            <%- include('components/forms'); %>
+            <%- include('components/tables'); %>
+            <%- include('components/lists'); %>
+            <%- include('components/cards'); %>
+            <%- include('components/navigation'); %>
+        </div>
+
+        <%- include('layout/footer'); %>
+    </body>
+</html>

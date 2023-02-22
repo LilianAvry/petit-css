@@ -1,30 +1,6 @@
 {
-  "name": "petit-css",
-  "version": "1.0.0-beta.12",
-  "description": "A minimalist and lightweight CSS boilerplate",
-  "main": "index.css",
-  "scripts": {
-    "build": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lil-re/petit-css.git"
-  },
-  "keywords": [
-    "small",
-    "lite",
-    "light",
-    "lightweight",
-    "css",
-    "style",
-    "sheet",
-    "stylesheet",
-    "framework"
-  ],
-  "author": "Lil.re",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lil-re/petit-css/issues"
-  },
-  "homepage": "http://petitcss.lil.re"
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "fs-extra": "^10.1.0"
+  }
 }
