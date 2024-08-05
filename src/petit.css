@@ -129,8 +129,9 @@ input[type="button"]:disabled:focus {
     font-weight: lighter;
 }
 .card .card-actions {
+    margin: 0;
     padding: 0.5rem;
-    margin: 0.5rem 0 0;
+    margin-top: 0.5rem;
     text-align: right;
     border-top: 1px solid #DDD;
 }
@@ -227,6 +228,9 @@ select:hover:disabled {
     align-items: flex-start;
     align-content: flex-start;
 }
+.row.flex-direction-row-reverse {flex-direction: row-reverse}
+.row.flex-direction-column {flex-direction: column}
+.row.flex-direction-column-reverse {flex-direction: column-reverse}
 .row.justify-content-start {justify-content: flex-start;}
 .row.justify-content-end {justify-content: flex-end;}
 .row.justify-content-center {justify-content: center;}
@@ -243,6 +247,7 @@ select:hover:disabled {
 .row.align-content-around {align-content: space-around;}
 .row.align-content-between {align-content: space-between;}
 .row.align-content-stretch {align-content: stretch;}
+
 div[class^="column"] {
     flex: 0 0 auto;
     flex-grow: 0;
@@ -298,8 +303,11 @@ div[class^="column"] {
     width: 8.33333332%;
 }
 
-@media (max-width: 750px) {
+@media (min-width: 600px) and (max-width: 960px) {
     .container {width: 100%;}
+}
+
+@media (max-width: 600px) {
     .container .row div[class^="column"] {
         flex-basis: 100%;
         width: 100%;
@@ -471,4 +479,4 @@ mark {
 .text-uppercase {text-transform: uppercase;}
 .text-lowercase {text-transform: lowercase;}
 .text-primary {color: var(--primary);}
-.borderless {border-width: 0;}
+.borderless {border-width: 0px;}

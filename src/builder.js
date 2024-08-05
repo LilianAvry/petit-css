@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 class Builder {
-  petitPath = `${__dirname}/src/petit.css`
+  petitPath = `${__dirname}/petit.css`
   options = { encoding:'utf8', flag:'r' }
   components = ['Colors', 'Button', 'Card', 'Form', 'Grid', 'List', 'Navigation', 'Table', 'Typography']
 
@@ -30,7 +30,7 @@ class Builder {
   }
 
   getFilePath (name) {
-    return `${__dirname}/src/${name.toLowerCase()}/style.css`;
+    return `${__dirname}/${name.toLowerCase()}/style.css`;
   }
 
   getFileContent (path) {
