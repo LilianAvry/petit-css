@@ -1,12 +1,12 @@
 const fs = require('fs');
 
-class Build {
+class Builder {
   petitPath = `${__dirname}/src/petit.css`
   options = { encoding:'utf8', flag:'r' }
   components = ['Colors', 'Button', 'Card', 'Form', 'Grid', 'List', 'Navigation', 'Table', 'Typography']
 
   static main () {
-    const builder = new Build()
+    const builder = new Builder()
     builder.openTargetFile().readComponents()
   }
 
@@ -56,5 +56,5 @@ class Build {
   }
 }
 
-Build.main()
+Builder.main()
 

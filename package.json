@@ -4,7 +4,8 @@
   "description": "A minimalist and lightweight CSS boilerplate",
   "main": "index.css",
   "scripts": {
-    "build": "node index.js"
+    "build": "node src/builder.js",
+    "minify": "node src/minifier.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/lil-re/petit-css/issues"
   },
-  "homepage": "http://petitcss.lil.re"
+  "homepage": "http://petitcss.lil.re",
+  "devDependencies": {
+    "clean-css": "^5.3.3"
+  }
 }

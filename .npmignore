@@ -1,6 +1,7 @@
 .idea
 .npmignore
-index.js
+node_modules
+builder.js
 src/button
 src/card
 src/code
